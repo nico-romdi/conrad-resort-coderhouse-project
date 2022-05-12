@@ -8,9 +8,17 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: grey;
 }
+ul{
+    margin-bottom: 0rem;
+    padding-left: 0rem;
+}
+p{
+    margin-bottom: 0px;
+}
 .fixed{
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 .hiltonAd{
     background-color: #233754;
@@ -160,6 +168,10 @@ body{
     color: white;
     font-style: italic;
 }
+.containerFooter{
+    min-height: 30vh;
+    padding: 25px 0px 35px;
+}
 /* ------------------------------------------------------- Index */
 .header__video{
     max-width: 100%;
@@ -200,14 +212,13 @@ body{
 }
 .reservation__button{
     background-color: #bca762;
-    width: 200px;
-    height: 40px;
+    width: 280px;
+    height: 50px;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 400;
     border-style: none;
-    margin-left: 20px;
-    margin-top: 17px;
+    margin-top: 55px;
 }
 .reservation__button a{
     color: white;
@@ -347,7 +358,7 @@ body{
 }
 .servicesFood__button{
     background-color: white;
-    width: 250px;
+    width: 280px;
     margin: 10px;
     padding: 15px;
     text-transform: uppercase;
@@ -380,7 +391,7 @@ body{
 }
 .servicesYoga__button{
     background-color: white;
-    width: 250px;
+    width: 280px;
     margin: 10px;
     padding: 15px;
     text-transform: uppercase;
@@ -413,7 +424,7 @@ body{
 }
 .serviceEvent__button{
     background-color: white;
-    width: 250px;
+    width: 280px;
     margin: 10px;
     padding: 15px;
     text-transform: uppercase;
@@ -457,39 +468,14 @@ body{
 }
 .social{
     background-color: antiquewhite;
-    padding: 100px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 100px 0px;
 }
-.social__title{
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-.social__text{
-    margin-bottom: 20px;
-}
-.social__span{
-    margin-top: 30px;
+.social__box{
+    padding: 200px 50px 200px 50px;
+
 }
 .social__insta{
-    text-decoration: none;
     color: grey;
-    font-weight: 700;
-    font-size: 25px;
-    padding-bottom: 50px;
-}
-.social__img{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-}
-.social__img img{
-    width: 300px;
 }
 .map iframe{
     width: 100%;
@@ -498,25 +484,68 @@ body{
 .views{
     background-color: white;
     padding: 30px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
 }
-.views_image{
-    width: 700px;
+.views__image{
+    max-width: 600px;
 }
 .views__title{
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 700;
 }
-.rooms{
+.views__1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
     padding: 30px;
+}
+.views__2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px;
+}
+.views__1text{
+    margin: 10px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.views__2text{
+    margin: 10px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.rooms{
+    padding: 100px 0px;
 }
 .rooms article{
     margin: 20px;
 }
+.roomTitle{
+    padding: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
 .rooms_title{
     font-size: 25px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 700;
     margin: 10px;
 }
 .rooms_price{
@@ -526,11 +555,12 @@ body{
 }
 .rooms_button{
     background-color: #233754;
+    width: 280px;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
-    font-weight: 700;
     border-style: none;
+    border-radius: 0%;
 }
 .rooms_button a{
     text-decoration: none;
@@ -1179,6 +1209,28 @@ body{
     }
     .social{
         padding: 100px 16px 0px;
+    }
+    /* ---------------------------------------- Stay */
+    .views{
+        padding: 100px 16px;
+    }
+    .views__1{
+        padding: 0px 0px 70px;
+        flex-direction: column;
+    }
+    .views__title{
+        font-size: 25px;
+        padding-top: 20px;
+    }
+    .views__2{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .views__image{
+        width: 100%;
+    }
+    .containerText{
+        font-size: 25px;
     }
     /* ---------------------------------------- Dine */
     .resto{

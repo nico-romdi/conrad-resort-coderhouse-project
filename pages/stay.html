@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conrad Bora Bora Nui | Luxury Resort</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="header"> 
@@ -40,66 +41,82 @@
     <main>
         <div class="informative">
             <p class="informative__title">Sit back and relax</p>
-            <p>Choose from two-story overwater villas and hillside suites with breathtaking views, traditional Polynesian decor, and modern features</p>
+            <p class="informative__text">Choose from two-story overwater villas and hillside suites with breathtaking views, traditional Polynesian decor, and modern features</p>
         </div>
         <section class="views" >
             <article class="views__1">
-                <img src="../images/oasis.jpg" alt="" class="views_image">
-                <p class="views__title">An oasis on the water</p>
-                <p class="views__text">Discover your own perfectly private escape, with indulgent amenities to fulfill every need. Rest and refresh with cool sparkling water from the minibar and your island playlist on the Bluetooth speakers.</p>
+                <img src="../images/oasis.jpg" alt="" class="views__image">
+                <div class="views__1text">
+                    <p class="views__title">An oasis on the water</p>
+                    <p class="views__text">Discover your own perfectly private escape, with indulgent amenities to fulfill every need. Rest and refresh with cool sparkling water from the minibar and your island playlist on the Bluetooth speakers.</p>
+                </div>
             </article>
             <article class="views__2">
-                <img src="../images/Pool.jpg" alt="couple watching sunset" class="views_image">
-                <p class="views__title">Views of paradise</p>
-                <p class="views__text">Step out onto your private terrace. Lounge in an overwater hammock or infinity pool and allow endless lagoon views to soothe your spirit.</p>
-            </article>
-        </section>
-        <section class="rooms">
-            <article>
-                <img src="../images/room 2.jpg" alt="">
-                <div class="rooms__1">
-                    <p class="rooms_title">Presidetial overwater villa</p>
-                    <span class="rooms_price"> Fr $793,128</span>
-                    <p>Up to 6 guest 2 bedroom 3 bathrooms</p>
-                    <button class="rooms_button">
-                        <a href="../resort.html">Book Villa</a>
-                    </button>
-                </div>
-            </article>
-            <article>
-                <img src="../images/room 3.jpg" alt="">
-                <div class="rooms__2">
-                    <p class="rooms_title">King overwater villa</p>
-                    <span class="rooms_price"> Fr $500,128</span>
-                    <p>Up to 6 guest 2 bedroom 3 bathrooms</p>
-                    <button class="rooms_button">
-                        <a href="./resort.html">Book Villa</a>
-                    </button>
-                </div>
-            </article>
-            <article>
-                <img src="../images/room 4.png" alt="">
-                <div class="rooms__3">
-                    <p class="rooms_title">King lagoon View Suite</p>
-                    <span class="rooms_price"> Fr $693,153</span>
-                    <p>Up to 6 guest 2 bedroom 3 bathrooms</p>
-                    <button class="rooms_button">
-                        <a href="./resort.html">Book Villa</a>
-                    </button>
-                </div>
-            </article>
-            <article>
-                <img src="../images/room 5.jpg" alt="">
-                <div class="rooms__4">
-                    <p class="rooms_title">Twin lagoon View Suite</p>
-                    <span class="rooms_price"> Fr $400,128</span>
-                    <p>Up to 6 guest 2 bedroom 3 bathrooms</p>
-                    <button class="rooms_button">
-                        <a href="./resort.html">Book Villa</a>
-                    </button>
+                <img src="../images/Pool.jpg" alt="" class="views__image">
+                <div class="views__2text">
+                    <p class="views__title">Views of paradise</p>
+                    <p class="views__text">Step out onto your private terrace. Lounge in an overwater hammock or infinity pool and allow endless lagoon views to soothe your spirit.</p>
                 </div>
             </article>
         </section>
+        <section room>
+            <div class="container rooms">
+                <p class="text-center fw-bold text-uppercase roomTitle containerText">Chose where would you like to stay</p>
+                <div class="row">
+                    <div class="col pb-5 room">
+                        <div class="card text-center pb-4">
+                            <img src="../images/room 1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title fs-4 fw-bold p-3 text-uppercase">Presidetial overwater villa</h5>
+                              <span class="text-center fs-5 p-4 text-uppercase"> Fr $793,128</span>
+                              <p class="card-text p-3" >For an ultimate experience, this two-story villa offers two bedrooms, three bathrooms, and a spacious living room. Features three terraces, and infinity pool, and a personal butler.</p>
+                              <p class="p-3 fw-bold">Up to 6 guest 2 bedroom 3 bathrooms</p>
+                              <a href="./resort.html" class="btn btn-primary text-uppercase rooms_button">Book Villa</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center pb-4">
+                            <img src="../images/room 2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title fs-4 fw-bold p-3 text-uppercase">King overwater villa</h5>
+                              <span class="text-center fs-5 p-4 text-uppercase"> Fr $500,128</span>
+                              <p class="card-text p-3">Situated on the lagoon with fully retractable windows and a floating overwater hammock, this 1,249 square foot villa offers uninterrupted views and space to unwind.</p>
+                              <p class="p-3 fw-bold">Up to 3 guest 2 bedroom 2 bathrooms</p>
+                              <a href="./resort.html" class="btn btn-primary text-uppercase rooms_button">Book Villa</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-center pb-4">
+                            <img src="../images/room 4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title fs-4 fw-bold p-3 text-uppercase">King Lagoon View Suite</h5>
+                              <span class="text-center fs-5 p-4 text-uppercase"> Fr $693,153</span>
+                              <p class="card-text p-3">Features lagoon views, connecting rooms, and a large private terrace. With 1,087 square feet of space, this is the perfect suite for families and groups.</p>
+                              <p class="p-3 fw-bold">Up to 4 guest 2 bedroom 3 bathrooms</p>
+                              <a href="./resort.html" class="btn btn-primary text-uppercase rooms_button">Book Villa</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center pb-4">
+                            <img src="../images/room 5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title fs-4 fw-bold p-3 text-uppercase">Twin lagoon View Suite</h5>
+                              <span class="text-center fs-5 p-4 text-uppercase"> Fr $400,128</span>
+                              <p class="card-text p-3">This relaxing suite offers 1,087 square feet of space. Features lagoon views, connecting rooms, and a large private terrace, perfect suite for families and groups..</p>
+                              <p class="p-3 fw-bold">Up to 3 guest 2 bedroom 2 bathrooms</p>
+                              <a href="./resort.html" class="btn btn-primary text-uppercase rooms_button">Book Villa</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="amenities">
             <p class="amenities__title">Resort Amenities</p>
             <ul class="amenities__icons">
@@ -163,5 +180,6 @@
         <img src="../images/logos/hilton-logo.png" width="100" alt=" Logo Hilton Honors" class="hiltonDeco">
     </footer>
     <p class="credit">Sitio desarrolado por <a href="https://www.behance.net/rnicolasromdi" target="blank">Nicolas Romero Diaz</a></p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
