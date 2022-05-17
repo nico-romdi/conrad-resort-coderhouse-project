@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>            
+<body>  
     <header class="header">
         <div class="fixed"> 
             <div class="hiltonAd"> 
@@ -21,19 +21,32 @@
                     <a href="https://www.hilton.com/en/hilton-honors/login/?forwardPageURI=https%3A%2F%2Fwww.hilton.com%2Fen%2Fhilton-honors%2Fguest%2Fmy-account%2F" target="black" class="hiltonAd__buttonSignIn">Sign In</a>
                 </div>
             </div> 
-            <nav class="nav">
-                <div class="nav__logo">
-                    <a href="./index.html"><img src="./images/logos/conrad-logo.png" class="logoConrad" alt="Logo Conrad Bora Bora Nui"></a>
-                </div> 
-                <a href="#">
-                    <img src="./images/icons/menu.svg"alt="" class="nav__open">
-                </a>
-                <ul class="nav__ul">
-                    <li class="nav__ul--li"><a href="./pages/stay.html">Stay</a></li>
-                    <li class="nav__ul--li"><a href="./pages/dine.html">Dine</a></li>
-                    <li class="nav__ul--li"><a href="./pages/enjoy.html">Enjoy</a></li>
-                    <li class="nav__ul--li"><a href="./pages/resort.html">Resort</a></li>
-                </ul>       
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html"><img src="./images/logos/conrad-logo.png" class="logoConrad p-2" alt="Logo Conrad Bora Bora Nui"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="./images/icons/menu.svg" alt="" width="50px" class="nav__open navbar-toggler-icon">
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav navItems">
+                      <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li> -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/stay.html">Stay</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/dine.html">Dine</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/enjoy.html">Enjoy</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/resort.html">Resort</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </nav>
         </div>
         <video src="https://c48c230edebef37baa0b-7924816fb41fd531ce97ed2a0e88770c.ssl.cf2.rackcdn.com/conradboraboranui.com/2020/01/ConradBoraBora_1920x1080.mp4" controls class="header_image"></video>
@@ -41,32 +54,34 @@
     <main>
         <div class="reservation">
             <p class="reservation__title">Make a Reservation</p>
-            <form action="" method="post" enctype="" class="reservationForm">
-                <div class="reservationForm__div">
-                    <label class="label" for="arrival">Arrival</label>
-                    <input class="input" type="date" id="arrival" name="arrival" placeholder="Enter arrival date">
+            <section>
+                <div class="container">
+                    <form class="reservationForm row" action="" method="post" enctype="" class="">
+                        <div class="col-12 col-md-3">
+                            <div class="reservationForm__div">
+                                <label class="label" for="arrival">Arrival</label>
+                                <input type="date" class="form-control" id="arrival" name="arrival" aria-describedby="date-arrival">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="reservationForm__div">
+                                <label class="label" for="arrival">Departure</label>
+                                <input type="date" class="form-control" id="departure" name="departure" aria-describedby="date-departure">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="reservationForm__div">
+                                <label class="label" for="arrival">Gest</label>
+                                <input type="number" class="form-control" id="guest" name="guest" aria-describedby="date-departure" placeholder="Number of guests">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <button type="submit" class="btn btn-primary reservation__button w-100">Check aviability</button>
+                        </div>
+                        <p class="text-center p-4">If there are no available rooms for you please come back later or complete a form <a href="./pages/resort.html" class="text-decoration-none link">here</a> in resort so we can contact you as soon as posible.</p>    
+                    </form>
                 </div>
-                <div class="reservationForm__div">
-                    <label class="label" for="departure">Departure</label>
-                    <input class="input" type="date" id="departure" name="departure" placeholder="Enter departure date">
-                </div>
-                <div class="reservationForm__div">
-                    <label class="label" for="guest">Guest</label>
-                    <input class="input" type="number" id="guest" name="guest" placeholder="Number of guests">  
-                </div>
-                <div class="reservationForm__div">
-                    <label class="label" for="discount">Special Rates</label>
-                    <select class="input" name="discount" id="discount">
-                        <option value="Points">Use Points</option>
-                        <option value="Agents">Travel Agents</option>
-                        <option value="Senior">Senior Rate</option> 
-                        <option value="Code">Protion Code</option>
-                    </select>
-                </div>
-                <button type="summit" class="reservation__button">
-                    <a href="./pages/resort.html"> Check Availability</a>
-                </button>
-            </form>
+            </section>
         </div>
         <div class="welcome">
             <p class="welcome__text1">Welcome to Conrad Bora Bora Nui</p>
@@ -79,18 +94,14 @@
                 <div class="stay2">
                     <p class="stay2__title">Villas and Suites</p>
                     <p class="stay2__text">Relax on a half-mile-long white-sand beach in Motu To’opua. Discover newly renovated overwater villas and embrace Polynesian sophistication.</p>
-                    <button class="stay2__button">
-                        <a href="./pages/stay.html">Start my journey</a>
-                    </button>
+                    <a class="stay2__button text-decoration-none" href="./pages/stay.html">Start my journey</a>
                  </div>
             </article>
             <article class="explore">
                 <div class="explore2">
                     <p class="explore2__title">Explore Bora Bora</p>
                     <p class="explore2__text">Forget the otside world. This time is yours. Escape to our secluted island or discover the must-see sights and hidden gems that Bora Bora has to offer</p>
-                    <button class="explore2__button">
-                        <a href="./pages/explore.html">Discover the island</a>
-                    </button>
+                    <a class="explore2__button text-decoration-none" href="./pages/enjoy.html">Discover the island</a>
                 </div>
                 <img src="./images/explore-bora.jpg" class="explore_img" alt="Island Resort">
             </article>
@@ -100,24 +111,17 @@
                 <article class="servicesFood">
                     <p class="servicesFood__title">A world of flavors</p>
                     <p class="servicesFood__text">Enjoy island dining with six unique restaurants and bars, including the fairytale setting of our signature French restaurant, Iriatai.</p>
-                    <button class="servicesFood__button">
-                        <a href="./pages/dine.html" class="servicesFood__button">Taste authenticity</a>
-                    </button>
+                    <a href="./pages/dine.html" class="servicesFood__button text-decoration-none">Taste authenticity</a>
                 </article>
                 <article class="servicesYoga">
                     <p class="servicesYoga__title">A journey for the senses</p>
                     <p class="servicesYoga__text">Find the ultimate relaxation and wellness at Hina Spa, where energy in black lava rocks combines with the natural healing touch.</p>
-                    <button class="servicesYoga__button">
-                        <a href="./pages/relax.html" class="servicesYoga__button">Embrace tranquility</a>
-                    </button>
+                    <a href="./pages/relax.html" class="servicesYoga__button text-decoration-none">Embrace tranquility</a>
                 </article>
                 <article class="serviceEvent">
                     <p class="serviceEvent__title">Celebrate Events</p>
-                    <p class="serviceEvent__text">Create memories of a lifetime. We include every perk you’d expect to make your celebration personal and tailored to you
-                        </p>
-                    <button class="serviceEvent__button">
-                        <a href="./pages/gather.html" class="button">Plan your event</a>
-                    </button>
+                    <p class="serviceEvent__text">Create memories of a lifetime. We include every perk you’d expect to make your celebration personal and tailored to you</p>
+                    <a href="./pages/gather.html" class="serviceEvent__button text-decoration-none">Plan your event</a>
                 </article>
             </div>
         </section>
@@ -132,16 +136,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 text-center social__box">
-                        <p class="text-uppercase fs-3 fw-bold p-5 social__title">Enjoy and share your trip</p>
-                        <p class="pb-5">Check out other travelers' experiences at Conrad Bora Bora Resort and all their adventure.</p>
+                        <p class="text-uppercase fs-3 fw-bold p-4 social__title">Enjoy and share your trip</p>
+                        <p class="pb-5">Check out other travelers' experiences at Conrad Bora Bora Resort and all their adventures.</p>
                         <p class="p-1">Follow us</p>
                         <a href="https://www.instagram.com/conradboraboranui/" target="blank" class="text-decoration-none fs-5 fw-bold social__insta">@conradboraboranui</a>
                     </div>
                     <div class="col-12 col-md-6" >
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
+                        <div id="carouselExampleControls" class="carousel slide w-75" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded">   
                               <div class="carousel-item active">
-                                <img src="./images/social/insta-1.jpg" class="d-block w-100" alt="Woman walking on beach border">
+                                <img src="./images/social/insta-1.jpg" class="d-block w-100" alt="Woman walking on beach border" >
                               </div>
                               <div class="carousel-item">
                                 <img src="./images/social/insta-2.jpg" class="d-block w-100" alt="Woman on the ocean">
@@ -157,9 +161,6 @@
                               </div>
                               <div class="carousel-item">
                                 <img src="./images/social/insta-6.jpg" class="d-block w-100" alt="Men sitting on edge of pool">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./images/social/insta-7.jpg" class="d-block w-100" alt="Men doing Stand Up Paddleboarding">
                               </div>
                               <div class="carousel-item">
                                 <img src="./images/social/insta-9.jpg" class="d-block w-100" alt="Woman walking at the Beach">
@@ -189,12 +190,12 @@
                 <p class="footer__title">Location</p>
                 <p>BP 502 Vaitape, Bora Bora, 98730, French Polynesia</p>
                 <p class="footer__title">Contact </p>
-                <p>Tel:</p><a href="68940603300">+689 40-603300</a> 
+                <p>Tel:</p><a class="number" href="68940603300">+689 40-603300</a> 
                 <p>Call us, it's toll free.</p> 
             </div>
             <div class="footerFollow">
                 <p class="footer__title-1">Follow us</p>
-                <ul class="follow" >
+                <ul class="follow">
                     <li><a href="https://www.tripadvisor.com.ar/Hotel_Review-g311415-d304568-Reviews-Conrad_Bora_Bora-Bora_Bora_Society_Islands.html" target="blank"><img src="./images/social/trip.png" width="40" alt="icono tripadviser"></a></li>
                     <li><a href="https://www.instagram.com/conradboraboranui/" target="blank"><img src="./images/social/insta.png" width="40" alt="icono instagram"></a></li>
                     <li><a href="https://www.facebook.com/conradboraboranui" target="blank"><img src="./images/social/facebook.png" width="40" alt="icono facebook"></a></li>
@@ -210,7 +211,7 @@
             </div>
             <div class="otherInfo">
                 <p class="footer__title">Other Information</p>
-                <ul>
+                <ul class="footer__text">
                     <li><a href="https://www.hilton.com/en/corporate/" target="blank">Hilton</a></li>
                     <li><a href="https://jobs.hilton.com/our-brands/conrad.php" target="blank">Careers</a></li>
                     <li><a href="https://www.hilton.com/en/corporate/development/" target="blank">Development</a></li>

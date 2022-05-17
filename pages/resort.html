@@ -21,19 +21,32 @@
                     <a href="https://www.hilton.com/en/hilton-honors/login/?forwardPageURI=https%3A%2F%2Fwww.hilton.com%2Fen%2Fhilton-honors%2Fguest%2Fmy-account%2F" target="black" class="hiltonAd__buttonSignIn">Sign In</a>
                 </div>
             </div> 
-            <nav class="nav">
-                <div class="nav__logo">
-                    <a href="../index.html"><img src="../images/logos/conrad-logo.png" class="logoConrad" alt="Logo Conrad Bora Bora Nui"></a>
-                </div> 
-                <a href="#">
-                    <img src="../images/icons/menu.svg"alt="" class="nav__open">
-                </a>
-                <ul class="nav__ul">
-                    <li class="nav__ul--li"><a href="./stay.html">Stay</a></li>
-                    <li class="nav__ul--li"><a href="./dine.html">Dine</a></li>
-                    <li class="nav__ul--li"><a href="./enjoy.html">Enjoy</a></li>
-                    <li class="nav__ul--li"><a href="./resort.html">Resort</a></li>
-                </ul>       
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html"><img src="../images/logos/conrad-logo.png" class="logoConrad p-2" alt="Logo Conrad Bora Bora Nui"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="./images/icons/menu.svg" alt="" width="50px" class="nav__open navbar-toggler-icon">
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav navItems">
+                      <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li> -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./stay.html">Stay</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./dine.html">Dine</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./enjoy.html">Enjoy</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="./resort.html">Resort</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </nav>
         </div>
         <img src="../images/resort-exterior-1920x800.jpg" alt="Resort Exterior" class="header_image">
@@ -52,16 +65,12 @@
             <article class="clean__service1">
                 <p class="clean_service1--title">Hilton Cleanstay</p>
                 <p class="clean_service1--text">We are committed to providing a safe and hospitable environment for all who visit our island. In consultation with global and local public health authorities, we have taken additional measures to make our cleaning and hygiene protocols even more rigorous</p>
-                <button class="clean_button">
-                    <a href="https://www.hilton.com/en/corporate/cleanstay/" target="blank">More info</a>
-                </button>
+                <a href="https://www.hilton.com/en/corporate/cleanstay/" target="blank" class="clean_button">More info</a>
             </article>
             <article class="clean__service2">
                 <p class="clean_service2--title">Entry & movement conditions</p>
                 <p class="clean_service2--text">Before your stay, we recommend visiting Tahiti Tourism board’s website for the most up-to-date official information related to Covid-19 in French Polynesia.</p>
-                <button class="clean_button">
-                    <a href="https://tahititourisme.com/en-us/covid-19/?" target="blank">More Info</a>
-                </button>
+                <a href="https://tahititourisme.com/en-us/covid-19/?" target="blank" class="clean_button">More Info</a>
             </article>
         </section>
         <div class="amenities">
@@ -82,50 +91,122 @@
                 <li><img src="../images/icons/business_center_FILL0_wght400_GRAD0_opsz48.svg" alt="Icon Bussines Center"><p>Bussines Center</p></li>
                 <li><img src="../images/icons/meeting_room_FILL0_wght400_GRAD0_opsz48.svg" alt="Icon Meeting Room"><p>Meeting Room</p></li>
             </ul>
-            <button class="amenities__button">Accesability Amenities</button>
+            <button type="button" class="btn btn-primary amenities__button" data-bs-toggle="modal" data-bs-target="#exampleModal">Accesability Amenities</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <!-- <h5 class="modal-title p-2 text-uppercase " id="exampleModalLabel">Accessible amenities for our guests</h5> -->
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold pb-4 text-center text-uppercase">Accessible amenities for our guests</p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 .ms-auto">
+                                    <ul>
+                                        <li>Accessible business center</li>
+                                        <li>Accessible concierge desk</li> 
+                                        <li>Accessible hotel restaurant</li>    
+                                        <li>Accessible public entrance</li>    
+                                        <li>Accessible registration desk</li>    
+                                        <li>Accessible route from the accessible public entrance to the accessible guestrooms</li>   
+                                        <li>Accessible route from the accessible public entrance to the registration area</li>   
+                                        <li>Accessible route from the hotel’s accessible entrance to the meeting room/ballroom area</li>    
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 .ms-auto">
+                                    <ul>
+                                        <li>Accessible route from the hotel’s accessible public entrance to at least one restaurant</li>    
+                                        <li>Accessible route from the hotel’s accessible public entrance to the business center</li>    
+                                        <li>Accessible route from the hotel’s accessible public entrance to the swimming pool</li>    
+                                        <li>Audible alarms</li>    
+                                        <li>Bathroom doors at least 32 inches wide</li>    
+                                        <li>Evacuation chair available to help evacuate a disabled person</li>    
+                                        <li>Large Print Menus</li>  
+                                        <li>Wheelchair ramp for lobby/reception access</li>  
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="fw-bold p-3 text-center text-uppercase">The following features aren't available</p>
+                                <div class="col-md-6 .ms-auto">
+                                    <ul>
+                                        <li>Accessible exercise facility</li>
+                                        <li>Accessible guest rooms with mobility features with entry or passage doors that provide 32” of clear width</li> 
+                                        <li>Accessible parking spaces for cars in the self-parking facility</li>
+                                        <li>Accessible route from the hotel’s accessible public entrance to the exercise facilities</li>
+                                        <li>Accessible route from the hotel’s accessible public entrance to the spa</li>
+                                        <li>Accessible swimming pool</li>
+                                    </ul>
+                                </div>    
+                                <div class="col-md-6 .ms-auto">    
+                                    <ul>
+                                        <li>Accessible transportation with advance notice</li>
+                                        <li>Assistive listening devices for meetings upon request</li>
+                                        <li>Closed captioning on televisions or closed captioning decoders</li>
+                                        <li>TTY for guest use</li>
+                                        <li>Valet only parking</li>
+                                        <li>Van-accessible parking in the self-parking facility</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="text-center p-4">If you have additional questions about the hotel's accessibility features or a request related to a disability, please contact the hotel directly <a class="text-decoration-none fw-bold modalLink" href="resort.html">here</a> or reach the front desk.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Close</button>
+                    </div> -->
+                  </div>
+                </div>
+            </div>
         </div>
         <div class="contact">
             <p class="contact_title">Contact us</p>
-            <form action="" method="post" enctype="">
-                <div>
-                    <label for="name">Name</label>
-                    <input class="input" type="text" id="name" name="name" placeholder="Please enter your full name">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input  class="input" type="email" id="email" name="email" placeholder="Enter your email"></input>
-                </div>
-                <div>
-                    <label for="phone">Phone</label>
-                    <input class="input" type="number" id="phone" name="phone" placeholder="Enter your phone number">
-                </div>
-                <div>
-                    <label for="guest">Guest</label>
-                    <input  class="input" type="number" id="guest" name="guest" placeholder="Enter number of guests">  
-                </div>
-                <div>
-                    <label for="arrival">Arrival</label>
-                    <input  class="input" type="date" id="arrival" name="arrival" placeholder="Enter arrival date">
-                </div>
-                <div>
-                    <label for="departure">Departure</label>
-                    <input  class="input" type="date" id="departure" name="departure" placeholder="Enter departure date">
-                </div>
-                <div>
-                    <label for="room">Room</label>
-                    <select  class="input" name="room" id="room">
-                        <option value="Points">Presidential</option>
-                        <option value="Agents">Travel Agents</option>
-                        <option value="Senior">Senior Rate</option> 
-                        <option value="Code">Protion Code</option>
-                    </select>
-                 </div>
-                 <div>
-                     <label for="comment">Comment or Special Requirement</label>
-                     <textarea placeholder="Enter your comment or requirement" name="comment" id="" cols="30" rows="10"></textarea>
-                 </div>
-                 <button class="contact__button">Send Mesage</button>
-            </form>
+            <div class="container">
+                <form class="reservationForm" action="" method="post" enctype="" class="">
+                    <div class="col-12 col-md-6 formContact">
+                        <div class="reservationForm__div text-center">
+                            <label class="name" for="arrival">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" aria-describedby="name" placeholder="Enter your full name...">
+                        </div>
+                        <div class="reservationForm__div text-center">
+                            <label class="name" for="arrival">E-mail</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter your e-mail...">
+                        </div>
+                        <div class="reservationForm__div text-center">
+                            <label class="phone" for="phone">Phone</label>
+                            <input type="number" class="form-control" id="phone" aria-describedby="phone" placeholder="Enter your phone number...">
+                        </div>
+                        <div class="reservationForm__div text-center">
+                            <label class="guest" for="phone">Guest</label>
+                            <input type="number" class="form-control" id="guest" aria-describedby="guest" placeholder="Enter number of guests...">
+                        </div>
+                        <div class="reservationForm__div text-center">
+                            <label for="room">Room</label>
+                            <select  class="form-control" name="room" aria-describedby="room" id="room">
+                                <option value="Points">Presidential Overwater Villa</option>
+                                <option value="Agents">King Overwater Villa</option>
+                                <option value="Senior">King Lagoon View Suite</option> 
+                                <option value="Code">Twin lagoon View Suite</option>
+                            </select>
+                         </div>
+                        <div class="reservationForm__div text-center">
+                            <label class="arrival" for="arrival">Arrival</label>
+                            <input type="date" class="form-control" id="arrival" name="arrival" aria-describedby="date-arrival">
+                        </div>
+                        <div class="reservationForm__div text-center">
+                            <label class="departure" for="arrival">Departure</label>
+                            <input type="date" class="form-control" id="departure" name="departure" aria-describedby="date-departure">
+                        </div>
+                        <div class="reservationForm__div text-center">
+                            <label for="comment">Comment or Requirement</label>
+                            <textarea placeholder="Enter your comment or requirement..." class="form-control" name="comment" id="comment" cols="20" rows="5"></textarea>
+                        </div>
+                        <a class="contact__button text-center text-decoration-none" href="#">Send Mesage</a>
+                    </div>
+                </form> 
+            </div>       
         </div>
     </main>
     <footer class="footer">
@@ -156,7 +237,7 @@
             </div>
             <div class="otherInfo">
                 <p class="footer__title">Other Information</p>
-                <ul>
+                <ul class="footer__text">
                     <li><a href="https://www.hilton.com/en/corporate/" target="blank">Hilton</a></li>
                     <li><a href="https://jobs.hilton.com/our-brands/conrad.php" target="blank">Careers</a></li>
                     <li><a href="https://www.hilton.com/en/corporate/development/" target="blank">Development</a></li>
