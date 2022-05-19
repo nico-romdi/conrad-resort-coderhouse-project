@@ -38,6 +38,8 @@ p{
 }
 .hiltonAd__logo:hover{
     transform: scale(1.1);
+    transition: all 0.5s;
+    transform: scale(1.09);
 }
 .hiltonAd__buttonJoin{
     color: white;
@@ -45,11 +47,17 @@ p{
     text-decoration: none;
     margin-right: 10px;
 }
+.hiltonAd__buttonJoin:hover{
+    color: #bca762;
+}
 .hiltonAd__buttonSignIn{
     color: white;
     font-size: 18px;
     text-decoration: none;
     font-weight: 700;
+}
+.hiltonAd__buttonSignIn:hover{
+    color: #bca762;
 }
 .nav{
     background-color: white;
@@ -65,6 +73,8 @@ p{
 }
 .logoConrad:hover{
     transform: scale(1.1);
+    transition: all 0.5s;
+    transform: scale(1.09);
 }
 .nav__ul{
     padding: 10px;
@@ -76,7 +86,7 @@ p{
 .nav__ul--li{ 
     text-align: center;
 }
-.navItems li a{
+.nav-link{
     text-transform: uppercase;
     color: #bca762;
     text-decoration: none;
@@ -85,9 +95,10 @@ p{
 .transform{
     transition: all;
 }
-.nav__ul a:hover{
+.nav-link:hover{
     color: #233754;
-    transform: scale(1.3);
+    transition: all 0.8s;
+    transform: scale(1.08);
 }
 .header_image{
     width: 100%;
@@ -236,8 +247,8 @@ p{
 }
 .reservation__button{
     background-color: #bca762;
-    width: 200px;
-    height: 50px;
+    width: 280px;
+    padding: 10px;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 400;
@@ -250,6 +261,8 @@ p{
 }
 .reservation__button:hover{
     background-color: #233754;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }   
 .link{
     color: white;
@@ -265,7 +278,7 @@ p{
     text-align: center;
 }
 .welcome__title{
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 10px;
@@ -285,7 +298,7 @@ p{
     flex-direction: column;
 }
 .stay{
-    padding: 30px;
+    padding: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -303,7 +316,7 @@ p{
     gap: 20px;
 }
 .stay2__title{
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
@@ -314,7 +327,9 @@ p{
 .stay2__button{
     background-color: #233754;
     color: white;
-    padding: 15px 50px;
+    text-align: center;
+    width: 280px;
+    padding: 10px;
     margin-top: 35px;
     text-transform: uppercase;
     border-style: none;
@@ -323,9 +338,11 @@ p{
 .stay2__button:hover{
     background-color: #bca762;
     color: white;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
 .explore{
-    padding: 30px;
+    padding: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -340,7 +357,7 @@ p{
     gap: 20px;
 }
 .explore2__title{
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
@@ -351,15 +368,19 @@ p{
 .explore2__button{
     background-color: #233754;
     color: white;
-    padding: 15px 50px;
+    width: 280px;
+    padding: 10px;
     margin-top: 35px;
     text-transform: uppercase;
     border-style: none;
     border-radius: 4px;
+    text-align: center;
 }
 .explore2__button:hover{
     background-color: #bca762;
     color: white;
+    transition: all 0.1s;
+    transform: scale(1.05);
 }
 .explore_img{
     max-width: 600px;
@@ -401,7 +422,7 @@ p{
     color: #233754;
     width: 280px;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
     border-style: none;    
     border-radius: 4px;
@@ -409,6 +430,8 @@ p{
 .servicesFood__button:hover{
     background-color: #233754;
     color: white;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
 .servicesYoga{
     background-image: url(../images/yoga.jpg);
@@ -441,7 +464,7 @@ p{
     color: #233754;
     width: 280px;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
     border-style: none;
     border-radius: 4px;
@@ -449,6 +472,8 @@ p{
 .servicesYoga__button:hover{
     background-color: #233754;
     color: white;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
 .serviceEvent{
     background-image: url(../images/wedding.jpg);
@@ -481,7 +506,7 @@ p{
     color: #233754;
     width: 280px;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
     border-style: none;
     border-radius: 4px;
@@ -489,6 +514,8 @@ p{
 .serviceEvent__button:hover{
     background-color: #233754;
     color: white;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
 .reviews{
     background-color: white;
@@ -503,7 +530,7 @@ p{
     margin: 20px;
 }
 .reviews__title{
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 10px;
@@ -522,9 +549,16 @@ p{
     text-decoration: none;
     color: grey;
 }
+.reviews a:hover{
+    transition: all 0.3s;
+    transform: scale(1.09);
+}
 .social{
     background-color: antiquewhite;
     padding: 100px 0px 90px;
+}
+.social__title{
+    font-size: 25px;
 }
 .social__box{
     padding: 200px 50px 200px 50px;
@@ -550,7 +584,7 @@ p{
     max-width: 600px;
 }
 .views__title{
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -594,7 +628,7 @@ p{
 }
 .roomTitle{
     padding: 10px;
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 10px;
@@ -618,14 +652,19 @@ p{
     padding: 10px;
     text-transform: uppercase;
     border-style: none;
-    border-radius: 0%;
+    border-radius: 4px;
+}
+.rooms_button:hover{
+    background-color: #bca762;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
 .rooms_button a{
     text-decoration: none;
     color: white;
 }
 .amenities__title{
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
     margin: 10px;
@@ -670,6 +709,11 @@ p{
     justify-content: space-evenly;
     align-items: center;
 }
+.resto1:hover{
+    transition: all 1.5s;
+    transform: scale(1.02);
+    border-radius: 4px;
+}
 .resto__title{
     font-size: 25px;
     text-transform: uppercase;
@@ -682,15 +726,20 @@ p{
 }
 .resto__button{
     background-color: white;
-    width: 250px;
+    color: #233754;
+    width: 280px;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
     border-style: none;
-}
-.resto__button a{
+    border-radius: 4px;
     text-decoration: none;
-    color: #233754;
+}
+.resto__button:hover{
+    background-color: #233754;
+    color: white;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
 .resto2{
     background-image: url(/images/upa\ upa.jpg);
@@ -708,6 +757,11 @@ p{
     justify-content: space-evenly;
     align-items: center;
 }
+.resto2:hover{
+    transition: all 1.5s;
+    transform: scale(1.02);
+    border-radius: 4px;
+}
 .resto3{
     background-image: url(/images/banyan.jpg);
     width: 33.333%;
@@ -723,6 +777,11 @@ p{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+.resto3:hover{
+    transition: all 1.5s;
+    transform: scale(1.02);
+    border-radius: 4px;
 }
 .otherResto{
     display: flex;
@@ -743,6 +802,11 @@ p{
     justify-content: space-evenly;
     align-items: center;
 }
+.otherResto__1:hover{
+    transition: all 1.5s;
+    transform: scale(1.02);
+    border-radius: 4px;
+}
 .otherResto__2{
     background-image: url(/images/tavara.jpg);
     width: 100%;
@@ -758,6 +822,11 @@ p{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+.otherResto__2:hover{
+    transition: all 1.5s;
+    transform: scale(1.02);
+    border-radius: 4px;
 }
 .otherExperiencies{
     padding: 120px 100px 150px;
@@ -786,15 +855,21 @@ p{
 }
 .otherExperiencies__button{
     background-color: #233754;
-    width: 250px;
-    padding: 15px 50px;
+    color: white;
+    width: 280px;
+    text-align: center;
+    padding: 10px;
     margin-top: 40px;
     text-transform: uppercase;
     border-style: none;
-}
-.otherExperiencies__button a{
+    border-radius: 4px;
     text-decoration: none;
+}
+.otherExperiencies__button:hover{
+    background-color: #bca762;
     color: white;
+    transition: all 0.2s;
+    transform: scale(1.05);
 }
 /* ------------------------------------------------------- Enjoy */
 .explore{
@@ -829,11 +904,10 @@ p{
 }
 .heritage__button{
     background-color: white;
-    border: solid red 1px;
     border-radius: 4px;
     width: 280px;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
     border-style: none;
     text-decoration: none;
@@ -842,8 +916,8 @@ p{
 .heritage__button:hover{
     background-color: #233754;
     color: white;
-    transition: all 0.1s;
-    transform: scale(1.02);
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
 .motoNui{
     background-image: url(/images/motu-tapu-810x790.jpg);
@@ -874,15 +948,20 @@ p{
 }
 .motoNui__button{
     background-color: white;
+    color: #233754;
+    border-radius: 4px;
     width: 280px;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
     border-style: none;
-}
-.motoNui__button a{
-    color: #233754;
     text-decoration: none;
+}
+.motoNui__button:hover{
+    background-color: #233754;
+    color: white;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
 .waterAct{
     background-image: url(/images/activity.jpg);
@@ -913,92 +992,207 @@ p{
 }
 .waterAct__button{
     background-color: white;
+    color: #233754;
+    border-radius: 4px;
     width: 280px;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
     border-style: none;
-}
-.waterAct__button a{
-    color: #233754;
     text-decoration: none;
 }
-.body{
-    background-color: white;
-    padding: 30px;
+.waterAct__button:hover{
+    background-color: #233754;
+    color: white;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
-.body div{
-    margin: 20px;
+.bodyCare{
+    background-color: white;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 .body__title{
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
-    margin: 10px;
     font-weight: 700;
+    margin-bottom: 20px;
+}
+.body__text{
+    font-size: 16px;
+    padding: 20px;
+    max-width: 650px;
+}
+.bodyCare__info{
+    padding: 50px;
 }
 .body__button{
     background-color:#233754;
+    border-radius: 4px;
     color: white;
+    width: 280px;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
-    font-weight: 700;
     border-style: none;
+    text-decoration: none;
+}
+.body__button:hover{
+    background-color: #bca762;
+    transition: all 0.3s;
+    transform: scale(1.05);
+}
+.bodySpa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px;
+}
+.bodySpa__img{
+    max-width: 600px;
 }
 .bodySpa__title{
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     margin: 10px;
     font-weight: 700;
 }
+.bodySpa__info{
+    margin: 10px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.bodyFitness{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px;
+}
+.bodyFitness__info{
+    margin: 10px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 .bodyFitness__title{
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     margin: 10px;
     font-weight: 700;
 }
 .gather{
-    padding: 30px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.gatherInfo{
+    padding: 50px;
+}
+.gather__img{
+    max-width: 600px;
 }
 .gather__title{
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
-    margin: 10px;
     font-weight: 700;
+    margin-bottom: 20px;
+}
+.gather__text{
+    font-size: 16px;
+    padding: 20px;
+    max-width: 650px;
+}
+.gatherWedding{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px;
+}
+.gatherWedding__info{
+    margin: 10px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .gatherWedding__title{
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     margin: 10px;
     font-weight: 700;
 }
 .gatherWedding__button{
     background-color:#bca762;
+    border-radius: 4px;
     color: white;
+    width: 280px;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
-    font-weight: 700;
     border-style: none;
+}
+.gatherWedding__button:hover{
+    background-color:  #233754;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
 .gatherWedding__button a{
     text-decoration: none;
     color: white;
 }
-.gatherEvent__title{
-    font-size: 30px;
-    text-transform: uppercase;
+.gatherEvent{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px;
+}
+.gatherEvent__info{
     margin: 10px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.gatherEvent__title{
+    font-size: 25px;
+    text-transform: uppercase;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 .gatherEvent__button{
     background-color:#bca762;
+    border-radius: 4px;
     color: white;
+    width: 280px;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
-    font-weight: 700;
     border-style: none;
+}
+.gatherEvent__button:hover{
+    background-color:  #233754;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
 .gatherEvent__button a{
     text-decoration: none;
@@ -1090,7 +1284,7 @@ p{
     color: #233754;
     width: 280px;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
     border-style: none;
     border-radius: 4px;
@@ -1099,6 +1293,8 @@ p{
 .clean_button:hover{
     background-color: #233754;
     color: white;
+    transition: all 0.5s;
+    transform: scale(1.05);
 }
 .amenities{
     background-color: white;
@@ -1107,11 +1303,6 @@ p{
     flex-direction: column;
     align-items: center;
     padding: 100px;
-}
-.amenities__title{
-    font-size: 30px;
-    text-transform: uppercase;
-    margin: 30px;
     text-align: center;
 }
 .amenities__icons{
@@ -1134,13 +1325,15 @@ p{
     color: white;
     width: 280px;
     margin-top: 20px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
     border-style: none;
     border-radius: 4px;
 }
 .amenities__button:hover{
     background-color:#233754;
+    transition: all 0.5s;
+    transform: scale(1.05);
 }
 .contact{
     background-color: antiquewhite;
@@ -1164,7 +1357,7 @@ p{
     color: white;
     width: 280px;
     margin-top: 20px;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
     border-style: none;
     border-radius: 4px;
@@ -1172,6 +1365,8 @@ p{
 .contact__button:hover{
     background-color:#bca762;
     color: white;
+    transition: all 0.5s;
+    transform: scale(1.05);
 }
 .nav__open{
     display: none;
@@ -1407,6 +1602,48 @@ p{
         font-size: 25px;
     }
     /* ---------------------------------------- Enjoy */
+    .bodyCare{
+        padding: 100px 16px;
+    }
+    .bodyCare__info {
+        padding: 50px 0px 50px;
+    }
+    .bodySpa{
+        max-width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+    .bodyFitness {
+        max-width: 100%;
+        flex-direction: column;
+        padding: 40px 0px;
+    }
+    .waterAct {
+        width: 100%;
+    }
+    .motoNui {
+        width: 100%;
+    }
+    .heritage{
+        width: 100%;
+    }
+    .gather {
+        padding: 100px 16px;
+    }
+    .gatherInfo {
+        padding: 50px 0px 50px;
+    }
+    .gatherWedding {
+        max-width: 100%;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .gatherEvent{
+        max-width: 100%;
+        flex-direction: column;
+        padding: 40px 0px;
+    }
+    /* ---------------------------------------- Resort */
     .host{
         padding: 100px 16px;
     }
