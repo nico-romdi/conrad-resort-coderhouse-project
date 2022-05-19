@@ -1,0 +1,410 @@
+.header__video{
+    max-width: 100%;
+    margin-top: 140px;
+}
+
+.reservation{
+    background-color:darkgray;
+    color: white;
+    padding: 70px 0px 50px;
+    width: 100%;
+
+    &__title{
+        text-transform: uppercase;
+        font-size: 22px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 700;
+        padding: 20px;
+    }
+}
+
+.reservationForm{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__div{
+        margin: 10px;
+        line-height: 50px;
+    }
+}
+
+.label{
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.reservation__button{
+    background-color: #bca762;
+    width: 280px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    border-style: none;
+    margin-top: 55px;
+
+    & a{
+        color: white;
+        text-decoration: none;   
+    }
+    &:hover{
+        background-color: #233754;
+        transition: all 0.3s;
+        transform: scale(1.05);
+    }
+}
+
+.link{
+    color: white;
+    font-weight: 700;
+}
+
+.welcome{
+    background-color: white;
+    padding-top: 140px;
+    padding-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    &__text1{
+        font-size: 16px;
+        font-style: italic;
+    }
+
+    &__text2{
+        font-size: 16px;
+        max-width: 650px;
+    }
+}
+
+
+.introduction{
+    padding: 100px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.stay{
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &__img{
+        max-width: 600px;
+    }
+}
+
+.stay2{
+    margin: 10px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    &__text{
+        text-align: center;
+    }
+
+    &__button{
+        background-color: #233754;
+        color: white;
+        text-align: center;
+        width: 280px;
+        padding: 10px;
+        margin-top: 35px;
+        text-transform: uppercase;
+        border-style: none;
+        border-radius: 4px;
+
+        &:hover{
+            background-color: #bca762;
+            color: white;
+            transition: all 0.3s;
+            transform: scale(1.05);
+        }
+    }
+    
+}
+
+.explore{
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &_img{
+        max-width: 600px;
+    }
+}
+
+.explore2{
+    margin: 10px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    &__text{
+        text-align: center;
+    }
+
+    &__button{
+        background-color: #233754;
+        color: white;
+        width: 280px;
+        padding: 10px;
+        margin-top: 35px;
+        text-transform: uppercase;
+        border-style: none;
+        border-radius: 4px;
+        text-align: center;
+
+        &:hover{
+            background-color: #bca762;
+            color: white;
+            transition: all 0.1s;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.services{
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.servicesFood{
+    background-image: url(../images/food.jpg);
+    width: 33.333%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &:hover{
+        transition: all 1.5s;
+        transform: scale(1.02);
+        border-radius: 4px;
+    }
+
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        margin: 10px;
+        font-weight: 700;
+    }
+
+    &__button{
+        background-color: white;
+        color: #233754;
+        width: 280px;
+        margin: 10px;
+        padding: 10px;
+        text-transform: uppercase;
+        border-style: none;    
+        border-radius: 4px;
+
+        &:hover{
+            background-color: #233754;
+            color: white;
+            transition: all 0.3s;
+            transform: scale(1.05);
+        }
+    } 
+}   
+
+
+.servicesYoga{
+    background-image: url(../images/yoga.jpg);
+    width: 33.333%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &:hover{
+        transition: all 1.5s;
+        transform: scale(1.02);
+        border-radius: 4px;
+    }
+
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        margin: 10px;
+        font-weight: 700;
+    }
+    &__button{
+        background-color: white;
+        color: #233754;
+        width: 280px;
+        margin: 10px;
+        padding: 10px;
+        text-transform: uppercase;
+        border-style: none;
+        border-radius: 4px;
+
+        &:hover{
+            background-color: #233754;
+            color: white;
+            transition: all 0.3s;
+            transform: scale(1.05);
+        }
+    }  
+}
+
+
+.serviceEvent{
+    background-image: url(../images/wedding.jpg);
+    width: 33.333%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &:hover{
+        transition: all 1.5s;
+        transform: scale(1.02);
+        border-radius: 4px;
+    }
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        margin: 10px;
+        font-weight: 700;
+    }
+    &__button{
+        background-color: white;
+        color: #233754;
+        width: 280px;
+        margin: 10px;
+        padding: 10px;
+        text-transform: uppercase;
+        border-style: none;
+        border-radius: 4px;
+
+        &:hover{
+            background-color: #233754;
+            color: white;
+            transition: all 0.3s;
+            transform: scale(1.05);
+        }
+    } 
+}
+
+.reviews{
+    background-color: white;
+    padding-top: 140px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    &__stars{
+        width: 80px;
+        margin: 20px;
+    }
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 30px
+    }
+    &__text{
+        text-align: center;
+        font-size: 16px;
+        max-width: 900px;
+        margin-bottom: 20px;
+    }
+    & a{
+        font-size: 16px;
+        margin: 20px;
+        font-weight: 700;
+        text-decoration: none;
+        color: grey;
+
+        &:hover{
+            transition: all 0.3s;
+            transform: scale(1.09);
+        }
+    }
+}
+
+.social{
+    background-color: antiquewhite;
+    padding: 100px 0px 90px;
+
+    &__title{
+        font-size: 25px;
+    }
+    &__box{
+        padding: 200px 50px 200px 50px;
+    }
+    &__insta{
+        color: grey;
+        
+        &:hover{
+            color: #233754;
+        }
+    }
+}
+
+.map iframe{
+    width: 100%;
+}

@@ -1,0 +1,201 @@
+.informative{
+    background-color: darkgray;
+    color: white;
+    padding: 100px 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.informative__title{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.informative__text{
+    text-align: center;
+    font-size: 16px;
+    max-width: 650px;
+}
+.resto{
+    display: flex;
+}
+.resto1{
+    background-image: url(../images/iriatai.jpg);
+    width: 33.333%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.resto1:hover{
+    transition: all 1.5s;
+    transform: scale(1.02);
+    border-radius: 4px;
+}
+.resto__title{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 10px;
+    font-weight: 700;
+}
+.resto__text{
+    text-align: center;
+    max-width: 500px;
+}
+.resto__button{
+    background-color: white;
+    color: #233754;
+    width: 280px;
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.resto__button:hover{
+    background-color: #233754;
+    color: white;
+    transition: all 0.3s;
+    transform: scale(1.05);
+}
+.resto2{
+    background-image: url(../images/upaupa.jpg);
+    width: 33.333%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.resto2:hover{
+    transition: all 1.5s;
+    transform: scale(1.02);
+    border-radius: 4px;
+}
+.resto3{
+    background-image: url(../images/banyan.jpg);
+    width: 33.333%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.resto3:hover{
+    transition: all 1.5s;
+    transform: scale(1.02);
+    border-radius: 4px;
+}
+.otherResto{
+    display: flex;
+}
+.otherResto__1{
+    background-image: url(../images/tamure.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.otherResto__1:hover{
+    transition: all 1.5s;
+    transform: scale(1.02);
+    border-radius: 4px;
+}
+.otherResto__2{
+    background-image: url(../images/tavara.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.otherResto__2:hover{
+    transition: all 1.5s;
+    transform: scale(1.02);
+    border-radius: 4px;
+}
+.otherExperiencies{
+    padding: 120px 100px 150px;
+    display: flex;
+    justify-content: center;
+}
+.otherExperiencies__img{
+    max-width: 500px;
+}
+.experience{
+    margin: 10px;
+    max-width: 500px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.otherExperiencies__title{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+.otherExperiencies__button{
+    background-color: #233754;
+    color: white;
+    width: 280px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.otherExperiencies__button:hover{
+    background-color: #bca762;
+    color: white;
+    transition: all 0.2s;
+    transform: scale(1.05);
+}

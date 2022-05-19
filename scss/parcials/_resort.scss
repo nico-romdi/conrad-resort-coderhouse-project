@@ -1,0 +1,187 @@
+.host{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px;
+    align-items: center;
+}
+.host__title{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px;
+}
+.host__text{
+    padding-top: 30px;
+    font-size: 16px;
+    max-width: 650px;
+}
+.clean{
+    display: flex;
+}
+.clean__service1{
+    background-image: url(../images/clean.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.clean__service1:hover{
+    transition: all 1.5s;
+    transform: scale(1.02);
+    border-radius: 4px;
+}
+.clean_service1--title{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.clean_service1--text{
+    max-width: 600px;
+}
+.clean__service2{
+    background-image: url(../images/travel.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.clean__service2:hover{
+    transition: all 1.5s;
+    transform: scale(1.02);
+    border-radius: 4px;
+}
+.clean_service2--text{
+    max-width: 600px;
+}
+.clean_service2--title{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.clean_button{
+    background-color: white;
+    color: #233754;
+    width: 280px;
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.clean_button:hover{
+    background-color: #233754;
+    color: white;
+    transition: all 0.5s;
+    transform: scale(1.05);
+}
+.amenities{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+}
+.amenities__icons{
+    padding: 30px;
+    list-style: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    flex-wrap: wrap;  
+    gap: 10px;  
+}
+.amenities__icons li{
+    padding: 8px;
+    width: 15%;
+}
+.amenities__button{
+    background-color:#bca762;
+    color: white;
+    width: 280px;
+    margin-top: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 4px;
+}
+.amenities__button:hover{
+    background-color:#233754;
+    transition: all 0.5s;
+    transform: scale(1.05);
+}
+.contact{
+    background-color: antiquewhite;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact_title{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 0px 30px;
+}
+.contact label{
+    text-transform: uppercase;
+}
+.contact__button{
+    background-color:#233754;
+    color: white;
+    width: 280px;
+    margin-top: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 4px;
+}
+.contact__button:hover{
+    background-color:#bca762;
+    color: white;
+    transition: all 0.5s;
+    transform: scale(1.05);
+}
+.nav__open{
+    display: none;
+    width: 30px;
+}
+.formContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reservationForm__div{
+    min-width: 100%;
+}
+.modalLink{
+    color: grey;
+}
+.modalLink:hover{
+    color: #bca762;
+}

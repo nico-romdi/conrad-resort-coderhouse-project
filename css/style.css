@@ -1,1681 +1,1894 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #e5e5e5;
-    font-family: 'Montserrat', sans-serif;
-    color: grey;
-}
-ul{
-    margin-bottom: 0rem;
-    padding-left: 0rem;
-}
-p{
-    margin-bottom: 0px;
-}
-.fixed{
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
-.hiltoLogin{
-    background-color: #233754;
-}
-.hiltonAd{
-    background-color: #233754;
-    width: 100%;
-    height: 60px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.hiltonAd__logo{
-    margin: 1px;
-    width: 100px;
-}
-.hiltonAd__logo:hover{
-    transform: scale(1.1);
-    transition: all 0.5s;
-    transform: scale(1.09);
-}
-.hiltonAd__buttonJoin{
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    margin-right: 10px;
-}
-.hiltonAd__buttonJoin:hover{
-    color: #bca762;
-}
-.hiltonAd__buttonSignIn{
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: 700;
-}
-.hiltonAd__buttonSignIn:hover{
-    color: #bca762;
-}
-.nav{
-    background-color: white;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-}
-.logoConrad{
-    width: 200px;
-}
-.logoConrad:hover{
-    transform: scale(1.1);
-    transition: all 0.5s;
-    transform: scale(1.09);
-}
-.nav__ul{
-    padding: 10px;
-    gap: 20px;
-    list-style: none;
-    align-items: center;
-    display: flex;
-}
-.nav__ul--li{ 
-    text-align: center;
-}
-.nav-link{
-    text-transform: uppercase;
-    color: #bca762;
-    text-decoration: none;
-    font-size: 18px;
-}
-.transform{
-    transition: all;
-}
-.nav-link:hover{
-    color: #233754;
-    transition: all 0.8s;
-    transform: scale(1.08);
-}
-.header_image{
-    width: 100%;
-    min-height: 500px;
-    margin-top: 146px;
-}
-.footer{
-    font-size: 14px;
-    padding: 10px;
-    background-color: #233754;
-    color: white;
-}
-.footerDiv{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-.footerFollow{
-    padding: 20px;
-    width: 100%;
-}
-.location{
-    padding: 20px;
-    width: 100%;
-}
-.location a{
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-}
-.follow{
-    width: 100%;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: flex-start;
-    gap: 2px;
-}
-.follow ul{
-    list-style: none;
-}
-.conradInfo{
-    padding: 20px;
-    width: 100%;
-}
-.conradInfo a{
-    color: white;
-    text-decoration: none;
-}
-.conradInfo a:hover{
-    text-shadow: 1px 1px 2px white;
-}
-.otherInfo{
-    padding: 20px;
-    width: 100%;
-}
-.otherInfo ul{
-    list-style: none;
-}
-.otherInfo a{
-    color: white;
-    text-decoration: none;
-}
-.conradDeco{
-    width: 200px;
-    margin-top: 15px;
-    content: center;
-    margin-top: 20px;
-    margin-left: 44%;
-}
-.hiltonDeco{
-    width: 100px;
-    margin-top: 15px;
-    margin-left: 47%;
-}
-.footer__title{
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-.footer__title-1{
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-.location a:hover{
-    text-shadow: 1px 1px 1px white;
-}
-.follow li img:hover{
-    transform: scale(1.1);
-}
-.footer__text li:hover{
-    text-shadow: 1px 1px 1px white;
-}
-.credit{
-    padding: 5px;
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-size: 12px;
-}
-.credit a{
-    text-decoration: none;
-    color: white;
-    font-style: italic;
-}
-.containerFooter{
-    min-height: 30vh;
-    padding: 25px 0px 35px;
-}
-/* ------------------------------------------------------- Index */
-.header__video{
-    max-width: 100%;
-    margin-top: 140px;
-}
-.reservation{
-    background-color:darkgray;
-    color: white;
-    padding: 70px 0px 50px;
-    width: 100%;
-}
-.reservation__title{
-    text-transform: uppercase;
-    font-size: 22px;
-    text-align: center;
-    line-height: 30px;
-    font-weight: 700;
-    padding: 20px;
-}
-.reservationForm{
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.reservationForm__div{
-    margin: 10px;
-    line-height: 50px;
-}
-.label{
-    color: white;
-    width: 100%;
-    text-transform: uppercase;
-}
-.reservation__button{
-    background-color: #bca762;
-    width: 280px;
-    padding: 10px;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 400;
-    border-style: none;
-    margin-top: 55px;
-}
-.reservation__button a{
-    color: white;
-    text-decoration: none;
-}
-.reservation__button:hover{
-    background-color: #233754;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}   
-.link{
-    color: white;
-    font-weight: 700;
-}
-.welcome{
-    background-color: white;
-    padding-top: 140px;
-    padding-bottom: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.welcome__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-.welcome__text1{
-    font-size: 16px;
-    font-style: italic;
-}
-.welcome__text2{
-    font-size: 16px;
-    max-width: 650px;
-}
-.introduction{
-    padding: 100px ;
-    display: flex;
-    flex-direction: column;
-}
-.stay{
-    padding: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.stay__img{
-    max-width: 600px;
-}
-.stay2{
-    margin: 10px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.stay2__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-}
-.stay2__text{
-    text-align: center;
-}
-.stay2__button{
-    background-color: #233754;
-    color: white;
-    text-align: center;
-    width: 280px;
-    padding: 10px;
-    margin-top: 35px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-}
-.stay2__button:hover{
-    background-color: #bca762;
-    color: white;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.explore{
-    padding: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.explore2{
-    margin: 10px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.explore2__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-}
-.explore2__text{
-    text-align: center;
-}
-.explore2__button{
-    background-color: #233754;
-    color: white;
-    width: 280px;
-    padding: 10px;
-    margin-top: 35px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-    text-align: center;
-}
-.explore2__button:hover{
-    background-color: #bca762;
-    color: white;
-    transition: all 0.1s;
-    transform: scale(1.05);
-}
-.explore_img{
-    max-width: 600px;
-}
-.services{
-    height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.servicesFood{
-    background-image: url(../images/food.jpg);
-    width: 33.333%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}   
-.servicesFood:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.servicesFood__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.servicesFood__button{
-    background-color: white;
-    color: #233754;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;    
-    border-radius: 4px;
-}
-.servicesFood__button:hover{
-    background-color: #233754;
-    color: white;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.servicesYoga{
-    background-image: url(../images/yoga.jpg);
-    width: 33.333%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.servicesYoga:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.servicesYoga__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.servicesYoga__button{
-    background-color: white;
-    color: #233754;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-}
-.servicesYoga__button:hover{
-    background-color: #233754;
-    color: white;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.serviceEvent{
-    background-image: url(../images/wedding.jpg);
-    width: 33.333%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.serviceEvent:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.serviceEvent__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.serviceEvent__button{
-    background-color: white;
-    color: #233754;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-}
-.serviceEvent__button:hover{
-    background-color: #233754;
-    color: white;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.reviews{
-    background-color: white;
-    padding-top: 140px;
-    padding-bottom: 150px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-.reviews__stars{
-    width: 80px;
-    margin: 20px;
-}
-.reviews__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 30px
-}
-.reviews__text{
-    text-align: center;
-    font-size: 16px;
-    max-width: 900px;
-    margin-bottom: 20px;
-}
-.reviews a{
-    font-size: 16px;
-    margin: 20px;
-    font-weight: 700;
-    text-decoration: none;
-    color: grey;
-}
-.reviews a:hover{
-    transition: all 0.3s;
-    transform: scale(1.09);
-}
-.social{
-    background-color: antiquewhite;
-    padding: 100px 0px 90px;
-}
-.social__title{
-    font-size: 25px;
-}
-.social__box{
-    padding: 200px 50px 200px 50px;
-}
-.social__insta{
-    color: grey;
-}
-.social__insta:hover{
-    color: #233754;
-}
-.map iframe{
-    width: 100%;
-}
-/* ------------------------------------------------------- Stay */
-.views{
-    background-color: white;
-    padding: 30px;
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-}
-.views__image{
-    max-width: 600px;
-}
-.views__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.views__1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 30px;
-}
-.views__2{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 30px;
-}
-.views__1text{
-    margin: 10px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.views__2text{
-    margin: 10px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.rooms{
-    padding: 100px 0px;
-}
-.rooms article{
-    margin: 20px;
-}
-.roomTitle{
-    padding: 10px;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-.rooms_title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 10px;
-}
-.rooms_price{
-    font-size: 35px;
-    font-weight: 700;
-    margin: 10px;
-}
-.rooms_button{
-    background-color: #233754;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-}
-.rooms_button:hover{
-    background-color: #bca762;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.rooms_button a{
-    text-decoration: none;
-    color: white;
-}
-.amenities__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 10px;
-}
-/* ------------------------------------------------------- Dine */
-.informative{
-    background-color: darkgray;
-    color: white;
-    padding: 100px 80px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.informative__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.informative__text{
-    text-align: center;
-    font-size: 16px;
-    max-width: 650px;
-}
-.resto{
-    display: flex;
-}
-.resto1{
-    background-image: url(../images/iriatai.jpg);
-    width: 33.333%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.resto1:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.resto__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.resto__text{
-    text-align: center;
-    max-width: 500px;
-}
-.resto__button{
-    background-color: white;
-    color: #233754;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-    text-decoration: none;
-}
-.resto__button:hover{
-    background-color: #233754;
-    color: white;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.resto2{
-    background-image: url(../images/upa\ upa.jpg);
-    width: 33.333%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.resto2:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.resto3{
-    background-image: url(../images/banyan.jpg);
-    width: 33.333%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.resto3:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.otherResto{
-    display: flex;
-}
-.otherResto__1{
-    background-image: url(../images/tamure.jpg);
-    width: 100%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.otherResto__1:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.otherResto__2{
-    background-image: url(../images/tavara.jpg);
-    width: 100%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.otherResto__2:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.otherExperiencies{
-    padding: 120px 100px 150px;
-    display: flex;
-    justify-content: center;
-}
-.otherExperiencies__img{
-    max-width: 500px;
-}
-.experience{
-    margin: 10px;
-    max-width: 500px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-}
-.otherExperiencies__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-}
-.otherExperiencies__button{
-    background-color: #233754;
-    color: white;
-    width: 280px;
-    text-align: center;
-    padding: 10px;
-    margin-top: 40px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-    text-decoration: none;
-}
-.otherExperiencies__button:hover{
-    background-color: #bca762;
-    color: white;
-    transition: all 0.2s;
-    transform: scale(1.05);
-}
-/* ------------------------------------------------------- Enjoy */
-.explore{
-    padding: 0px;
-}
-.heritage{
-    background-image: url(../images/heritage.jpg);
-    width: 33.333%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.heritage:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.heritage__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.heritage__button{
-    background-color: white;
-    border-radius: 4px;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    text-decoration: none;
-    color: #233754;
-}
-.heritage__button:hover{
-    background-color: #233754;
-    color: white;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.motoNui{
-    background-image: url(../images/motu-tapu-810x790.jpg);
-    width: 33.333%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.motoNui:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.motoNui__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 10px;
-}
-.motoNui__button{
-    background-color: white;
-    color: #233754;
-    border-radius: 4px;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    text-decoration: none;
-}
-.motoNui__button:hover{
-    background-color: #233754;
-    color: white;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.waterAct{
-    background-image: url(../images/activity.jpg);
-    width: 33.333%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;;
-}
-.waterAct:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.waterAct__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.waterAct__button{
-    background-color: white;
-    color: #233754;
-    border-radius: 4px;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    text-decoration: none;
-}
-.waterAct__button:hover{
-    background-color: #233754;
-    color: white;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.bodyCare{
-    background-color: white;
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-.body__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.body__text{
-    font-size: 16px;
-    padding: 20px;
-    max-width: 650px;
-}
-.bodyCare__info{
-    padding: 50px;
-}
-.body__button{
-    background-color:#233754;
-    border-radius: 4px;
-    color: white;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    text-decoration: none;
-}
-.body__button:hover{
-    background-color: #bca762;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.bodySpa{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 30px;
-}
-.bodySpa__img{
-    max-width: 600px;
-}
-.bodySpa__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.bodySpa__info{
-    margin: 10px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.bodyFitness{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 30px;
-}
-.bodyFitness__info{
-    margin: 10px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.bodyFitness__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.gather{
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-.gatherInfo{
-    padding: 50px;
-}
-.gather__img{
-    max-width: 600px;
-}
-.gather__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.gather__text{
-    font-size: 16px;
-    padding: 20px;
-    max-width: 650px;
-}
-.gatherWedding{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 30px;
-}
-.gatherWedding__info{
-    margin: 10px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.gatherWedding__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.gatherWedding__button{
-    background-color:#bca762;
-    border-radius: 4px;
-    color: white;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-}
-.gatherWedding__button:hover{
-    background-color:  #233754;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.gatherWedding__button a{
-    text-decoration: none;
-    color: white;
-}
-.gatherEvent{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 30px;
-}
-.gatherEvent__info{
-    margin: 10px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.gatherEvent__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.gatherEvent__button{
-    background-color:#bca762;
-    border-radius: 4px;
-    color: white;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-}
-.gatherEvent__button:hover{
-    background-color:  #233754;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.gatherEvent__button a{
-    text-decoration: none;
-    color: white;
-}
-/* ------------------------------------------------------- Resort */
-.host{
-    background-color: white;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 100px;
-    align-items: center;
-}
-.host__title{
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 10px;
-}
-.host__text{
-    padding-top: 30px;
-    font-size: 16px;
-    max-width: 650px;
-}
-.clean{
-    display: flex;
-}
-.clean__service1{
-    background-image: url(../images/clean.jpg);
-    width: 100%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.clean__service1:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.clean_service1--title{
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.clean_service1--text{
-    max-width: 600px;
-}
-.clean__service2{
-    background-image: url(../images/travel.jpg);
-    width: 100%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.clean__service2:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.clean_service2--text{
-    max-width: 600px;
-}
-.clean_service2--title{
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.clean_button{
-    background-color: white;
-    color: #233754;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-    text-decoration: none;
-}
-.clean_button:hover{
-    background-color: #233754;
-    color: white;
-    transition: all 0.5s;
-    transform: scale(1.05);
-}
-.amenities{
-    background-color: white;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px;
-    text-align: center;
-}
-.amenities__icons{
-    padding: 30px;
-    list-style: none;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    flex-wrap: wrap;  
-    gap: 10px;  
-}
-.amenities__icons li{
-    padding: 8px;
-    width: 15%;
-}
-.amenities__button{
-    background-color:#bca762;
-    color: white;
-    width: 280px;
-    margin-top: 20px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-}
-.amenities__button:hover{
-    background-color:#233754;
-    transition: all 0.5s;
-    transform: scale(1.05);
-}
-.contact{
-    background-color: antiquewhite;
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.contact_title{
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 20px 0px 30px;
-}
-.contact label{
-    text-transform: uppercase;
-}
-.contact__button{
-    background-color:#233754;
-    color: white;
-    width: 280px;
-    margin-top: 20px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-}
-.contact__button:hover{
-    background-color:#bca762;
-    color: white;
-    transition: all 0.5s;
-    transform: scale(1.05);
-}
-.nav__open{
-    display: none;
-    width: 30px;
-}
-.formContact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.reservationForm__div{
-    min-width: 100%;
-}
-.modalLink{
-    color: grey;
-}
-.modalLink:hover{
-    color: #bca762;
-}
-/* ------------------------------------------------------------------------ Media Queries */
-@media screen and (max-width: 1023px) {
-    .conradDeco {
-        margin-left: 39%;
-    }
-    .hiltonDeco {
-        margin-left: 44%;
-    }
-    /* ---------------------------------------- Index */
-    .header_image {
-        margin-top: 130px;
-    }
-    .introduction {
-        padding: 100px 0px;
-        display: flex;
-    }
-    .stay__img{
-        max-width: 400px;
-        height: fit-content;
-    }
-    .stay2__button {
-        margin-top: 5px;
-    }
-    .explore_img {
-        max-width: 400px;
-        height: fit-content;
-    }
-    .explore2__button {
-        margin-top: 5px;
-    }
-    .reservationForm {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .reviews__text {
-        padding: 40px;
-    }
-    /* ---------------------------------------- Dine */
-    .otherExperiencies__img{
-        max-width: 400px;
-        height: fit-content;
-    }
-    .otherExperiencies__button{
-        margin-top: 5px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .hiltonAd__logo {
-        width: 95px;
-    }
-    .logoConrad{
-        width: 170px;
-    }
-    .nav__open{
-        margin: 16px;
-        display: block;
-    }
-    .nav__ul {
-        display: none;
-    }
-    .header_image{
-        min-height: 157px;
-    }
-    .footerDiv{
-        flex-direction: column;
-        text-align: center;
-    }
-    .conradDeco{
-        width: 170px;
-        margin-left: 23%;
-    }
-    .hiltonDeco{
-        width: 95px;
-        margin-left: 35%
-    }
-    .informative{
-        padding: 100px 16px;
-    }
-    .informative__title {
-        font-size: 24px;
-    }
-    .follow{
-        width: 100%;
-        justify-content: space-around;
-    }
-    /* ---------------------------------------- Index */
-    .welcome{
-        padding: 100px 16px;
-    }
-    .welcome__title{
-        font-size: 24px;
-    }
-    .reservationForm {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .input {
-        width: 100px;
-        margin-left: 20px;
-    }
-    .introduction {
-        padding: 100px 16px;
-    }
-    .stay{
-        padding: 0;
-        flex-direction: column;
-    }
-    .stay2__title {
-        font-size: 25px;
-    }
-    .stay__img{
-        width: 100%;
-    }
-    .stay2{
-        padding: 20px 0px;
-    }
-    .explore{
-        flex-direction: column;
-        padding: 0px;
-    }
-    .explore_img{
-        width: 100%;
-    }
-    .explore{
-        flex-direction: column-reverse;
-    }
-    .explore2{
-        padding: 20px 0px;
-    }
-    .explore2__title {
-        font-size: 25px;
-    }
-    .services{
-        margin-bottom: 950px;
-    }
-    .servicesFood{
-        width: 100%;
-        height: 500px;
-    }
-    .servicesYoga{
-        width: 100%;
-        height: 500px;
-    }
-    .serviceEvent{
-        width: 100%;
-        height: 500px;
-    }
-    .reviews{
-        padding: 100px 16px;
-    }
-    .reviews__title {
-        font-size: 25px;
-        text-align: center;
-    }
-    .reviews__text{
-        padding: 40px 16px;
-    }
-    .social{
-        padding: 50px 0px;
-    }
-    .social__title{
-        padding: 50px 0px;
-    }
-    .social__box {
-        padding: 0px 16px 100px;
-    }
-    /* ---------------------------------------- Stay */
-    .views{
-        padding: 100px 16px;
-    }
-    .views__1{
-        padding: 0px 0px 70px;
-        flex-direction: column;
-    }
-    .views__title{
-        font-size: 25px;
-        padding-top: 20px;
-    }
-    .views__2{
-        flex-direction: column;
-        padding: 0px;
-    }
-    .views__image{
-        width: 100%;
-    }
-    .containerText{
-        font-size: 25px;
-    }
-    /* ---------------------------------------- Dine */
-    .resto{
-        flex-direction: column;
-    }
-    .resto1{
-        width: 100%;
-    }
-    .resto2{
-        width: 100%;
-    }
-    .resto3{
-        width: 100%;
-    }
-    .otherResto{
-        display: flex;
-        flex-direction: column;
-    }
-    .otherExperiencies {
-        padding: 100px 16px;
-        flex-wrap: wrap;
-    }
-    .otherExperiencies__img{
-        width: 100%;
-    }
-    .otherExperiencies__title {
-        font-size: 25px;
-    }
-    .experience{
-        padding: 30px, 0px;
-    }
-    /* ---------------------------------------- Enjoy */
-    .bodyCare{
-        padding: 100px 16px;
-    }
-    .bodyCare__info {
-        padding: 50px 0px 50px;
-    }
-    .bodySpa{
-        max-width: 100%;
-        flex-direction: column;
-        padding: 0;
-    }
-    .bodyFitness {
-        max-width: 100%;
-        flex-direction: column;
-        padding: 40px 0px;
-    }
-    .waterAct {
-        width: 100%;
-    }
-    .motoNui {
-        width: 100%;
-    }
-    .heritage{
-        width: 100%;
-    }
-    .gather {
-        padding: 100px 16px;
-    }
-    .gatherInfo {
-        padding: 50px 0px 50px;
-    }
-    .gatherWedding {
-        max-width: 100%;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .gatherEvent{
-        max-width: 100%;
-        flex-direction: column;
-        padding: 40px 0px;
-    }
-    /* ---------------------------------------- Resort */
-    .host{
-        padding: 100px 16px;
-    }
-    .clean {
-        display: flex;
-        flex-direction: column;
-    }
-    .host__title {
-        font-size: 25px;
-    }
-    .clean_service1--title {
-        font-size: 25px;
-    }
-    .clean_service2--title {
-        font-size: 25px;
-    }
-    .amenities{
-        padding: 60px 32px 90px;
-    }
-    .amenities__icons{
-        padding: 0;  
-        gap: 0;
-    }
-    .amenities__icons li{
-        padding: 20px;
-        width: 50%;
-    }
-    .contact {
-        padding: 100px 12px;
-    }
 
+body {
+  background-color: #e5e5e5;
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
 }
+
+ul {
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.fixed {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.hiltoLogin {
+  background-color: #233754;
+}
+
+.hiltonAd {
+  background-color: #233754;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hiltonAd__logo {
+  margin: 1px;
+  width: 100px;
+}
+
+.hiltonAd__logo:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  transform: scale(1.09);
+}
+
+.hiltonAd__buttonJoin {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.hiltonAd__buttonJoin:hover {
+  color: #bca762;
+}
+
+.hiltonAd__buttonSignIn {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.hiltonAd__buttonSignIn:hover {
+  color: #bca762;
+}
+
+.nav {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logoConrad {
+  width: 200px;
+}
+
+.logoConrad:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  transform: scale(1.09);
+}
+
+.nav__ul {
+  padding: 10px;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+  display: flex;
+}
+
+.nav__ul--li {
+  text-align: center;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: #bca762;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.transform {
+  transition: all;
+}
+
+.nav-link:hover {
+  color: #233754;
+  transition: all 0.8s;
+  transform: scale(1.08);
+}
+
+.header_image {
+  width: 100%;
+  min-height: 500px;
+  margin-top: 146px;
+}
+
+.footer {
+  font-size: 14px;
+  padding: 10px;
+  background-color: #233754;
+  color: white;
+}
+
+.footerDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.footerFollow {
+  padding: 20px;
+  width: 100%;
+}
+
+.location {
+  padding: 20px;
+  width: 100%;
+}
+
+.location a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.follow {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.follow ul {
+  list-style: none;
+}
+
+.conradInfo {
+  padding: 20px;
+  width: 100%;
+}
+
+.conradInfo a {
+  color: white;
+  text-decoration: none;
+}
+
+.conradInfo a:hover {
+  text-shadow: 1px 1px 2px white;
+}
+
+.otherInfo {
+  padding: 20px;
+  width: 100%;
+}
+
+.otherInfo ul {
+  list-style: none;
+}
+
+.otherInfo a {
+  color: white;
+  text-decoration: none;
+}
+
+.conradDeco {
+  width: 200px;
+  margin-top: 15px;
+  content: center;
+  margin-top: 20px;
+  margin-left: 44%;
+}
+
+.hiltonDeco {
+  width: 100px;
+  margin-top: 15px;
+  margin-left: 47%;
+}
+
+.footer__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.footer__title-1 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.location a:hover {
+  text-shadow: 1px 1px 1px white;
+}
+
+.follow li img:hover {
+  transform: scale(1.1);
+}
+
+.footer__text li:hover {
+  text-shadow: 1px 1px 1px white;
+}
+
+.credit {
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+}
+
+.credit a {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+
+.containerFooter {
+  min-height: 30vh;
+  padding: 25px 0px 35px;
+}
+
+.header__video {
+  max-width: 100%;
+  margin-top: 140px;
+}
+
+.reservation {
+  background-color: darkgray;
+  color: white;
+  padding: 70px 0px 50px;
+  width: 100%;
+}
+
+.reservation__title {
+  text-transform: uppercase;
+  font-size: 22px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.reservationForm {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reservationForm__div {
+  margin: 10px;
+  line-height: 50px;
+}
+
+.label {
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.reservation__button {
+  background-color: #bca762;
+  width: 280px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  border-style: none;
+  margin-top: 55px;
+}
+
+.reservation__button a {
+  color: white;
+  text-decoration: none;
+}
+
+.reservation__button:hover {
+  background-color: #233754;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.link {
+  color: white;
+  font-weight: 700;
+}
+
+.welcome {
+  background-color: white;
+  padding-top: 140px;
+  padding-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.welcome__text1 {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.welcome__text2 {
+  font-size: 16px;
+  max-width: 650px;
+}
+
+.introduction {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stay {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.stay__img {
+  max-width: 600px;
+}
+
+.stay2 {
+  margin: 10px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.stay2__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.stay2__text {
+  text-align: center;
+}
+
+.stay2__button {
+  background-color: #233754;
+  color: white;
+  text-align: center;
+  width: 280px;
+  padding: 10px;
+  margin-top: 35px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+}
+
+.stay2__button:hover {
+  background-color: #bca762;
+  color: white;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.explore {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.explore_img {
+  max-width: 600px;
+}
+
+.explore2 {
+  margin: 10px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.explore2__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.explore2__text {
+  text-align: center;
+}
+
+.explore2__button {
+  background-color: #233754;
+  color: white;
+  width: 280px;
+  padding: 10px;
+  margin-top: 35px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.explore2__button:hover {
+  background-color: #bca762;
+  color: white;
+  transition: all 0.1s;
+  transform: scale(1.05);
+}
+
+.services {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.servicesFood {
+  background-image: url(../images/food.jpg);
+  width: 33.333%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.servicesFood:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.servicesFood__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.servicesFood__button {
+  background-color: white;
+  color: #233754;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+}
+
+.servicesFood__button:hover {
+  background-color: #233754;
+  color: white;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.servicesYoga {
+  background-image: url(../images/yoga.jpg);
+  width: 33.333%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.servicesYoga:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.servicesYoga__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.servicesYoga__button {
+  background-color: white;
+  color: #233754;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+}
+
+.servicesYoga__button:hover {
+  background-color: #233754;
+  color: white;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.serviceEvent {
+  background-image: url(../images/wedding.jpg);
+  width: 33.333%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.serviceEvent:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.serviceEvent__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.serviceEvent__button {
+  background-color: white;
+  color: #233754;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+}
+
+.serviceEvent__button:hover {
+  background-color: #233754;
+  color: white;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.reviews {
+  background-color: white;
+  padding-top: 140px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.reviews__stars {
+  width: 80px;
+  margin: 20px;
+}
+
+.reviews__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.reviews__text {
+  text-align: center;
+  font-size: 16px;
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+
+.reviews a {
+  font-size: 16px;
+  margin: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: grey;
+}
+
+.reviews a:hover {
+  transition: all 0.3s;
+  transform: scale(1.09);
+}
+
+.social {
+  background-color: antiquewhite;
+  padding: 100px 0px 90px;
+}
+
+.social__title {
+  font-size: 25px;
+}
+
+.social__box {
+  padding: 200px 50px 200px 50px;
+}
+
+.social__insta {
+  color: grey;
+}
+
+.social__insta:hover {
+  color: #233754;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.views {
+  background-color: white;
+  padding: 30px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.views__image {
+  max-width: 600px;
+}
+
+.views__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.views__1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 30px;
+}
+
+.views__2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 30px;
+}
+
+.views__1text {
+  margin: 10px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.views__2text {
+  margin: 10px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.rooms {
+  padding: 100px 0px;
+}
+
+.rooms article {
+  margin: 20px;
+}
+
+.roomTitle {
+  padding: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.rooms_title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.rooms_price {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.rooms_button {
+  background-color: #233754;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+}
+
+.rooms_button:hover {
+  background-color: #bca762;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.rooms_button a {
+  text-decoration: none;
+  color: white;
+}
+
+.amenities__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.informative {
+  background-color: darkgray;
+  color: white;
+  padding: 100px 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.informative__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.informative__text {
+  text-align: center;
+  font-size: 16px;
+  max-width: 650px;
+}
+
+.resto {
+  display: flex;
+}
+
+.resto1 {
+  background-image: url(../images/iriatai.jpg);
+  width: 33.333%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.resto1:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.resto__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.resto__text {
+  text-align: center;
+  max-width: 500px;
+}
+
+.resto__button {
+  background-color: white;
+  color: #233754;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.resto__button:hover {
+  background-color: #233754;
+  color: white;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.resto2 {
+  background-image: url(../images/upaupa.jpg);
+  width: 33.333%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.resto2:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.resto3 {
+  background-image: url(../images/banyan.jpg);
+  width: 33.333%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.resto3:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.otherResto {
+  display: flex;
+}
+
+.otherResto__1 {
+  background-image: url(../images/tamure.jpg);
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.otherResto__1:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.otherResto__2 {
+  background-image: url(../images/tavara.jpg);
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.otherResto__2:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.otherExperiencies {
+  padding: 120px 100px 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.otherExperiencies__img {
+  max-width: 500px;
+}
+
+.experience {
+  margin: 10px;
+  max-width: 500px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.otherExperiencies__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.otherExperiencies__button {
+  background-color: #233754;
+  color: white;
+  width: 280px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.otherExperiencies__button:hover {
+  background-color: #bca762;
+  color: white;
+  transition: all 0.2s;
+  transform: scale(1.05);
+}
+
+.explore {
+  padding: 0px;
+}
+
+.heritage {
+  background-image: url(../images/heritage.jpg);
+  width: 33.333%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.heritage:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.heritage__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.heritage__button {
+  background-color: white;
+  border-radius: 4px;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  text-decoration: none;
+  color: #233754;
+}
+
+.heritage__button:hover {
+  background-color: #233754;
+  color: white;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.motoNui {
+  background-image: url(../images/motu-tapu-810x790.jpg);
+  width: 33.333%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.motoNui:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.motoNui__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.motoNui__button {
+  background-color: white;
+  color: #233754;
+  border-radius: 4px;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  text-decoration: none;
+}
+
+.motoNui__button:hover {
+  background-color: #233754;
+  color: white;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.waterAct {
+  background-image: url(../images/activity.jpg);
+  width: 33.333%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.waterAct:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.waterAct__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.waterAct__button {
+  background-color: white;
+  color: #233754;
+  border-radius: 4px;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  text-decoration: none;
+}
+
+.waterAct__button:hover {
+  background-color: #233754;
+  color: white;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.bodyCare {
+  background-color: white;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.body__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.body__text {
+  font-size: 16px;
+  padding: 20px;
+  max-width: 650px;
+}
+
+.bodyCare__info {
+  padding: 50px;
+}
+
+.body__button {
+  background-color: #233754;
+  border-radius: 4px;
+  color: white;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  text-decoration: none;
+}
+
+.body__button:hover {
+  background-color: #bca762;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.bodySpa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 30px;
+}
+
+.bodySpa__img {
+  max-width: 600px;
+}
+
+.bodySpa__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.bodySpa__info {
+  margin: 10px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.bodyFitness {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 30px;
+}
+
+.bodyFitness__info {
+  margin: 10px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.bodyFitness__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.gather {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.gatherInfo {
+  padding: 50px;
+}
+
+.gather__img {
+  max-width: 600px;
+}
+
+.gather__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.gather__text {
+  font-size: 16px;
+  padding: 20px;
+  max-width: 650px;
+}
+
+.gatherWedding {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 30px;
+}
+
+.gatherWedding__info {
+  margin: 10px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gatherWedding__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.gatherWedding__button {
+  background-color: #bca762;
+  border-radius: 4px;
+  color: white;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+}
+
+.gatherWedding__button:hover {
+  background-color: #233754;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.gatherWedding__button a {
+  text-decoration: none;
+  color: white;
+}
+
+.gatherEvent {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 30px;
+}
+
+.gatherEvent__info {
+  margin: 10px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gatherEvent__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.gatherEvent__button {
+  background-color: #bca762;
+  border-radius: 4px;
+  color: white;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+}
+
+.gatherEvent__button:hover {
+  background-color: #233754;
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.gatherEvent__button a {
+  text-decoration: none;
+  color: white;
+}
+
+.host {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 100px;
+  align-items: center;
+}
+
+.host__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.host__text {
+  padding-top: 30px;
+  font-size: 16px;
+  max-width: 650px;
+}
+
+.clean {
+  display: flex;
+}
+
+.clean__service1 {
+  background-image: url(../images/clean.jpg);
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.clean__service1:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.clean_service1--title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.clean_service1--text {
+  max-width: 600px;
+}
+
+.clean__service2 {
+  background-image: url(../images/travel.jpg);
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.clean__service2:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.clean_service2--text {
+  max-width: 600px;
+}
+
+.clean_service2--title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.clean_button {
+  background-color: white;
+  color: #233754;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.clean_button:hover {
+  background-color: #233754;
+  color: white;
+  transition: all 0.5s;
+  transform: scale(1.05);
+}
+
+.amenities {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  text-align: center;
+}
+
+.amenities__icons {
+  padding: 30px;
+  list-style: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.amenities__icons li {
+  padding: 8px;
+  width: 15%;
+}
+
+.amenities__button {
+  background-color: #bca762;
+  color: white;
+  width: 280px;
+  margin-top: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+}
+
+.amenities__button:hover {
+  background-color: #233754;
+  transition: all 0.5s;
+  transform: scale(1.05);
+}
+
+.contact {
+  background-color: antiquewhite;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 20px 0px 30px;
+}
+
+.contact label {
+  text-transform: uppercase;
+}
+
+.contact__button {
+  background-color: #233754;
+  color: white;
+  width: 280px;
+  margin-top: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+}
+
+.contact__button:hover {
+  background-color: #bca762;
+  color: white;
+  transition: all 0.5s;
+  transform: scale(1.05);
+}
+
+.nav__open {
+  display: none;
+  width: 30px;
+}
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservationForm__div {
+  min-width: 100%;
+}
+
+.modalLink {
+  color: grey;
+}
+
+.modalLink:hover {
+  color: #bca762;
+}
+
+@media screen and (max-width: 1023px) {
+  .conradDeco {
+    margin-left: 39%;
+  }
+  .hiltonDeco {
+    margin-left: 44%;
+  }
+  /* ---------------------------------------- Index */
+  .header_image {
+    margin-top: 130px;
+  }
+  .introduction {
+    padding: 100px 0px;
+    display: flex;
+  }
+  .stay__img {
+    max-width: 400px;
+    height: fit-content;
+  }
+  .stay2__button {
+    margin-top: 5px;
+  }
+  .explore_img {
+    max-width: 400px;
+    height: fit-content;
+  }
+  .explore2__button {
+    margin-top: 5px;
+  }
+  .reservationForm {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .reviews__text {
+    padding: 40px;
+  }
+  /* ---------------------------------------- Dine */
+  .otherExperiencies__img {
+    max-width: 400px;
+    height: fit-content;
+  }
+  .otherExperiencies__button {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hiltonAd__logo {
+    width: 95px;
+  }
+  .logoConrad {
+    width: 170px;
+  }
+  .nav__open {
+    margin: 16px;
+    display: block;
+  }
+  .nav__ul {
+    display: none;
+  }
+  .header_image {
+    min-height: 157px;
+  }
+  .footerDiv {
+    flex-direction: column;
+    text-align: center;
+  }
+  .conradDeco {
+    width: 170px;
+    margin-left: 23%;
+  }
+  .hiltonDeco {
+    width: 95px;
+    margin-left: 35%;
+  }
+  .informative {
+    padding: 100px 16px;
+  }
+  .informative__title {
+    font-size: 24px;
+  }
+  .follow {
+    width: 100%;
+    justify-content: space-around;
+  }
+  /* ---------------------------------------- Index */
+  .welcome {
+    padding: 100px 16px;
+  }
+  .welcome__title {
+    font-size: 24px;
+  }
+  .reservationForm {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .input {
+    width: 100px;
+    margin-left: 20px;
+  }
+  .introduction {
+    padding: 100px 16px;
+  }
+  .stay {
+    padding: 0;
+    flex-direction: column;
+  }
+  .stay2__title {
+    font-size: 25px;
+  }
+  .stay__img {
+    width: 100%;
+  }
+  .stay2 {
+    padding: 20px 0px;
+  }
+  .explore {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .explore_img {
+    width: 100%;
+  }
+  .explore {
+    flex-direction: column-reverse;
+  }
+  .explore2 {
+    padding: 20px 0px;
+  }
+  .explore2__title {
+    font-size: 25px;
+  }
+  .services {
+    margin-bottom: 950px;
+  }
+  .servicesFood {
+    width: 100%;
+    height: 500px;
+  }
+  .servicesYoga {
+    width: 100%;
+    height: 500px;
+  }
+  .serviceEvent {
+    width: 100%;
+    height: 500px;
+  }
+  .reviews {
+    padding: 100px 16px;
+  }
+  .reviews__title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .reviews__text {
+    padding: 40px 16px;
+  }
+  .social {
+    padding: 50px 0px;
+  }
+  .social__title {
+    padding: 50px 0px;
+  }
+  .social__box {
+    padding: 0px 16px 100px;
+  }
+  /* ---------------------------------------- Stay */
+  .views {
+    padding: 100px 16px;
+  }
+  .views__1 {
+    padding: 0px 0px 70px;
+    flex-direction: column;
+  }
+  .views__title {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+  .views__2 {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .views__image {
+    width: 100%;
+  }
+  .containerText {
+    font-size: 25px;
+  }
+  /* ---------------------------------------- Dine */
+  .resto {
+    flex-direction: column;
+  }
+  .resto1 {
+    width: 100%;
+  }
+  .resto2 {
+    width: 100%;
+  }
+  .resto3 {
+    width: 100%;
+  }
+  .otherResto {
+    display: flex;
+    flex-direction: column;
+  }
+  .otherExperiencies {
+    padding: 100px 16px;
+    flex-wrap: wrap;
+  }
+  .otherExperiencies__img {
+    width: 100%;
+  }
+  .otherExperiencies__title {
+    font-size: 25px;
+  }
+  .experience {
+    padding: 30px, 0px;
+  }
+  /* ---------------------------------------- Enjoy */
+  .bodyCare {
+    padding: 100px 16px;
+  }
+  .bodyCare__info {
+    padding: 50px 0px 50px;
+  }
+  .bodySpa {
+    max-width: 100%;
+    flex-direction: column;
+    padding: 0;
+  }
+  .bodyFitness {
+    max-width: 100%;
+    flex-direction: column;
+    padding: 40px 0px;
+  }
+  .waterAct {
+    width: 100%;
+  }
+  .motoNui {
+    width: 100%;
+  }
+  .heritage {
+    width: 100%;
+  }
+  .gather {
+    padding: 100px 16px;
+  }
+  .gatherInfo {
+    padding: 50px 0px 50px;
+  }
+  .gatherWedding {
+    max-width: 100%;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .gatherEvent {
+    max-width: 100%;
+    flex-direction: column;
+    padding: 40px 0px;
+  }
+  /* ---------------------------------------- Resort */
+  .host {
+    padding: 100px 16px;
+  }
+  .clean {
+    display: flex;
+    flex-direction: column;
+  }
+  .host__title {
+    font-size: 25px;
+  }
+  .clean_service1--title {
+    font-size: 25px;
+  }
+  .clean_service2--title {
+    font-size: 25px;
+  }
+  .amenities {
+    padding: 60px 32px 90px;
+  }
+  .amenities__icons {
+    padding: 0;
+    gap: 0;
+  }
+  .amenities__icons li {
+    padding: 20px;
+    width: 50%;
+  }
+  .contact {
+    padding: 100px 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
