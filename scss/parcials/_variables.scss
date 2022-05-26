@@ -1,0 +1,64 @@
+
+$color-primary: #233754;
+
+$color-secundary: #bca762;
+
+// map-get//
+
+$styles: (
+  color1: #233754,
+  color2: #bca762,
+  color3: white,
+  color4: darkgrey,
+  center: center,
+  font: 25px,
+  padding : 15px,
+);
+
+.button{
+    background-color: #233754;
+    color: white;
+    width: 280px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 4px;
+    text-decoration: none;
+
+    &--gold{
+        @extend .button;
+        background-color: #bca762,
+    }
+
+    &--white{
+        @extend .button;
+        background-color: white;
+        color: #233754;
+    }
+}
+
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.box-medium {
+    @include sizes (100%, 500px)
+}
+
+
+@mixin generateflex ($direction, $axis-primary, $axis-secondary) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $axis-primary;
+    align-items: $axis-secondary;
+    text-align: center;
+}
+
+
+    
+
+
+

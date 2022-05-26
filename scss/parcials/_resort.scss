@@ -6,20 +6,42 @@
     text-align: center;
     padding: 100px;
     align-items: center;
+
+    &__title{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 10px;
+    }
+    &__text{
+        padding-top: 30px;
+        font-size: 16px;
+        max-width: 650px;
+    }
 }
-.host__title{
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 10px;
-}
-.host__text{
-    padding-top: 30px;
-    font-size: 16px;
-    max-width: 650px;
-}
+
 .clean{
     display: flex;
+
+    &_button{
+        background-color: white;
+        color: #233754;
+        width: 280px;
+        margin: 10px;
+        padding: 10px;
+        text-transform: uppercase;
+        border-style: none;
+        border-radius: 4px;
+        text-decoration: none;
+
+        &:hover{
+            background-color: #233754;
+            color: white;
+            transition: all 0.5s;
+            transform: scale(1.05);
+        }
+    }
+    
 }
 .clean__service1{
     background-image: url(../images/clean.jpg);
@@ -36,19 +58,20 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-}
-.clean__service1:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.clean_service1--title{
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.clean_service1--text{
-    max-width: 600px;
+
+    &:hover{
+        transition: all 1.5s;
+        transform: scale(1.02);
+        border-radius: 4px;
+    }
+    &--title{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &--text{
+        max-width: 600px;
+    }
 }
 .clean__service2{
     background-image: url(../images/travel.jpg);
@@ -64,36 +87,22 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-}
-.clean__service2:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.clean_service2--text{
-    max-width: 600px;
-}
-.clean_service2--title{
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.clean_button{
-    background-color: white;
-    color: #233754;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-    text-decoration: none;
-}
-.clean_button:hover{
-    background-color: #233754;
-    color: white;
-    transition: all 0.5s;
-    transform: scale(1.05);
+
+    &:hover{
+        transition: all 1.5s;
+        transform: scale(1.02);
+        border-radius: 4px;
+    }
+
+    &--text{
+        max-width: 600px;
+    }
+
+    &--title{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
 }
 .amenities{
     background-color: white;
@@ -103,37 +112,42 @@
     align-items: center;
     padding: 100px;
     text-align: center;
+
+    &__icons{
+        padding: 30px;
+        list-style: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+        flex-wrap: wrap;  
+        gap: 10px; 
+        
+        & li{
+            padding: 8px;
+            width: 15%;
+        }   
+    } 
+    &__button{
+        background-color:#bca762;
+        color: white;
+        width: 280px;
+        margin-top: 20px;
+        padding: 10px;
+        text-transform: uppercase;
+        border-style: none;
+        border-radius: 4px;
+
+        &__button:hover{
+            background-color:#233754;
+            transition: all 0.5s;
+            transform: scale(1.05);
+        }
+    } 
 }
-.amenities__icons{
-    padding: 30px;
-    list-style: none;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    flex-wrap: wrap;  
-    gap: 10px;  
-}
-.amenities__icons li{
-    padding: 8px;
-    width: 15%;
-}
-.amenities__button{
-    background-color:#bca762;
-    color: white;
-    width: 280px;
-    margin-top: 20px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-}
-.amenities__button:hover{
-    background-color:#233754;
-    transition: all 0.5s;
-    transform: scale(1.05);
-}
+
+
 .contact{
     background-color: antiquewhite;
     padding: 100px;
@@ -141,32 +155,36 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    &_title{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 20px 0px 30px;
+    }
+
+    & label{
+        text-transform: uppercase;
+    }
+    &__button{
+        background-color:#233754;
+        color: white;
+        width: 280px;
+        margin-top: 20px;
+        padding: 10px;
+        text-transform: uppercase;
+        border-style: none;
+        border-radius: 4px;
+    
+        &:hover{
+            background-color:#bca762;
+            color: white;
+            transition: all 0.5s;
+            transform: scale(1.05);
+        }
+    }
 }
-.contact_title{
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 20px 0px 30px;
-}
-.contact label{
-    text-transform: uppercase;
-}
-.contact__button{
-    background-color:#233754;
-    color: white;
-    width: 280px;
-    margin-top: 20px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 4px;
-}
-.contact__button:hover{
-    background-color:#bca762;
-    color: white;
-    transition: all 0.5s;
-    transform: scale(1.05);
-}
+
 .nav__open{
     display: none;
     width: 30px;
@@ -181,7 +199,7 @@
 }
 .modalLink{
     color: grey;
-}
-.modalLink:hover{
-    color: #bca762;
+    &:hover{
+        color: #bca762;
+    }
 }

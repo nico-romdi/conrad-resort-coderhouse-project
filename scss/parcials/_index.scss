@@ -51,7 +51,7 @@
         text-decoration: none;   
     }
     &:hover{
-        background-color: #233754;
+        background-color: $color-primary;
         transition: all 0.3s;
         transform: scale(1.05);
     }
@@ -129,7 +129,7 @@
     }
 
     &__button{
-        background-color: #233754;
+        background-color: $color-primary;
         color: white;
         text-align: center;
         width: 280px;
@@ -181,7 +181,7 @@
     }
 
     &__button{
-        background-color: #233754;
+        background-color: $color-primary;
         color: white;
         width: 280px;
         padding: 10px;
@@ -237,7 +237,7 @@
 
     &__button{
         background-color: white;
-        color: #233754;
+        color: $color-primary;
         width: 280px;
         margin: 10px;
         padding: 10px;
@@ -246,7 +246,7 @@
         border-radius: 4px;
 
         &:hover{
-            background-color: #233754;
+            background-color: $color-primary;
             color: white;
             transition: all 0.3s;
             transform: scale(1.05);
@@ -284,7 +284,7 @@
     }
     &__button{
         background-color: white;
-        color: #233754;
+        color: $color-primary;
         width: 280px;
         margin: 10px;
         padding: 10px;
@@ -293,7 +293,7 @@
         border-radius: 4px;
 
         &:hover{
-            background-color: #233754;
+            background-color: $color-primary;
             color: white;
             transition: all 0.3s;
             transform: scale(1.05);
@@ -330,7 +330,7 @@
     }
     &__button{
         background-color: white;
-        color: #233754;
+        color: $color-primary;
         width: 280px;
         margin: 10px;
         padding: 10px;
@@ -339,7 +339,7 @@
         border-radius: 4px;
 
         &:hover{
-            background-color: #233754;
+            background-color: $color-primary;
             color: white;
             transition: all 0.3s;
             transform: scale(1.05);
@@ -400,7 +400,7 @@
         color: grey;
         
         &:hover{
-            color: #233754;
+            color: $color-primary;
         }
     }
 }

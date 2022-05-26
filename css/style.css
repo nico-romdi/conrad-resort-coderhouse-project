@@ -1,3 +1,30 @@
+.button, .button--gold, .button--white {
+  background-color: #233754;
+  color: white;
+  width: 280px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.button--gold {
+  background-color: #bca762;
+}
+
+.button--white {
+  background-color: white;
+  color: #233754;
+}
+
+.box-medium {
+  width: 100%;
+  height: 500px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -786,7 +813,7 @@ p {
 }
 
 .informative {
-  background-color: darkgray;
+  background-color: darkgrey;
   color: white;
   padding: 100px 80px;
   display: flex;
@@ -811,28 +838,6 @@ p {
 
 .resto {
   display: flex;
-}
-
-.resto1 {
-  background-image: url(../images/iriatai.jpg);
-  width: 33.333%;
-  height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.resto1:hover {
-  transition: all 1.5s;
-  transform: scale(1.02);
-  border-radius: 4px;
 }
 
 .resto__title {
@@ -866,10 +871,40 @@ p {
   transform: scale(1.05);
 }
 
-.resto2 {
-  background-image: url(../images/upaupa.jpg);
+.resto1 {
   width: 33.333%;
   height: 500px;
+  width: 33.333%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/iriatai.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.resto1:hover {
+  transition: all 1.5s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.resto2 {
+  width: 33.333%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/upaupa.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -877,10 +912,6 @@ p {
   padding: 15px;
   text-align: center;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 .resto2:hover {
@@ -890,9 +921,14 @@ p {
 }
 
 .resto3 {
-  background-image: url(../images/banyan.jpg);
   width: 33.333%;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/banyan.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -900,10 +936,6 @@ p {
   padding: 15px;
   text-align: center;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 .resto3:hover {
@@ -917,20 +949,20 @@ p {
 }
 
 .otherResto__1 {
-  background-image: url(../images/tamure.jpg);
   width: 100%;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/tamure.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: white;
   padding: 15px;
-  text-align: center;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 .otherResto__1:hover {
@@ -940,20 +972,20 @@ p {
 }
 
 .otherResto__2 {
-  background-image: url(../images/tavara.jpg);
   width: 100%;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/tavara.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: white;
   padding: 15px;
-  text-align: center;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 .otherResto__2:hover {
@@ -963,25 +995,16 @@ p {
 }
 
 .otherExperiencies {
-  padding: 120px 100px 150px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 120px 100px 150px;
 }
 
 .otherExperiencies__img {
   max-width: 500px;
-}
-
-.experience {
-  margin: 10px;
-  max-width: 500px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
 }
 
 .otherExperiencies__title {
@@ -1007,8 +1030,20 @@ p {
 .otherExperiencies__button:hover {
   background-color: #bca762;
   color: white;
-  transition: all 0.2s;
-  transform: scale(1.05);
+  transition: all 1.0s;
+  transform: scale(1.02);
+  border-radius: 4px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  padding: 30px;
+  gap: 20px;
 }
 
 .explore {
@@ -1410,6 +1445,25 @@ p {
   display: flex;
 }
 
+.clean_button {
+  background-color: white;
+  color: #233754;
+  width: 280px;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.clean_button:hover {
+  background-color: #233754;
+  color: white;
+  transition: all 0.5s;
+  transform: scale(1.05);
+}
+
 .clean__service1 {
   background-image: url(../images/clean.jpg);
   width: 100%;
@@ -1433,13 +1487,13 @@ p {
   border-radius: 4px;
 }
 
-.clean_service1--title {
-  font-size: 30px;
+.clean__service1--title {
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.clean_service1--text {
+.clean__service1--text {
   max-width: 600px;
 }
 
@@ -1465,33 +1519,14 @@ p {
   border-radius: 4px;
 }
 
-.clean_service2--text {
+.clean__service2--text {
   max-width: 600px;
 }
 
-.clean_service2--title {
-  font-size: 30px;
+.clean__service2--title {
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 700;
-}
-
-.clean_button {
-  background-color: white;
-  color: #233754;
-  width: 280px;
-  margin: 10px;
-  padding: 10px;
-  text-transform: uppercase;
-  border-style: none;
-  border-radius: 4px;
-  text-decoration: none;
-}
-
-.clean_button:hover {
-  background-color: #233754;
-  color: white;
-  transition: all 0.5s;
-  transform: scale(1.05);
 }
 
 .amenities {
@@ -1532,7 +1567,7 @@ p {
   border-radius: 4px;
 }
 
-.amenities__button:hover {
+.amenities__button__button:hover {
   background-color: #233754;
   transition: all 0.5s;
   transform: scale(1.05);
@@ -1548,7 +1583,7 @@ p {
 }
 
 .contact_title {
-  font-size: 30px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 700;
   margin: 20px 0px 30px;
