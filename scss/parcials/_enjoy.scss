@@ -8,43 +8,44 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
+    color: map-get($styles, color3);
     padding: 15px;
-    text-align: center;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @include generateflex(column,space-evenly, center);
+
+    &:hover{
+        transition: all 1.5s;
+        transform: scale(1.02);
+        border-radius: 4px;
+    }
+
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        margin: 10px;
+        font-weight: 700;
+    }
+
+    &__button{
+        background-color: map-get($styles, color3);
+        border-radius: 4px;
+        width: 280px;
+        margin: 10px;
+        padding: 10px;
+        text-transform: uppercase;
+        border-style: none;
+        text-decoration: none;
+        color: map-get($styles, color1);
+
+        &:hover{
+            background-color: map-get($styles, color1);
+            color: map-get($styles, color3);
+            transition: all 0.3s;
+            transform: scale(1.05);
+        }
+    }
 }
-.heritage:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.heritage__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.heritage__button{
-    background-color: white;
-    border-radius: 4px;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    text-decoration: none;
-    color: #233754;
-}
-.heritage__button:hover{
-    background-color: #233754;
-    color: white;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
+
 .motoNui{
     background-image: url(../images/motu-tapu-810x790.jpg);
     width: 33.333%;
@@ -52,43 +53,44 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
+    color: map-get($styles, color3);
     padding: 15px;
-    text-align: center;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @include generateflex(column,space-evenly, center);
+
+    &:hover{
+        transition: all 1.5s;
+        transform: scale(1.02);
+        border-radius: 4px;
+    }
+
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 10px;
+    }
+    &__button{
+        background-color: map-get($styles, color3);
+        color: map-get($styles, color1);
+        border-radius: 4px;
+        width: 280px;
+        margin: 10px;
+        padding: 10px;
+        text-transform: uppercase;
+        border-style: none;
+        text-decoration: none;
+
+        &:hover{
+            background-color: map-get($styles, color1);
+            color: map-get($styles, color3);
+            transition: all 0.3s;
+            transform: scale(1.05);
+        }
+    }
 }
-.motoNui:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.motoNui__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 10px;
-}
-.motoNui__button{
-    background-color: white;
-    color: #233754;
-    border-radius: 4px;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    text-decoration: none;
-}
-.motoNui__button:hover{
-    background-color: #233754;
-    color: white;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
+
+
 .waterAct{
     background-image: url(../images/activity.jpg);
     width: 33.333%;
@@ -96,50 +98,50 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
+    color: map-get($styles, color3);
     padding: 15px;
-    text-align: center;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;;
+    @include generateflex(column,space-evenly, center);
+
+    &:hover{
+        transition: all 1.5s;
+        transform: scale(1.02);
+        border-radius: 4px;
+    }
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        margin: 10px;
+        font-weight: 700;
+    }
+    &__button{
+        background-color: map-get($styles, color3);
+        color: map-get($styles, color1);
+        border-radius: 4px;
+        width: 280px;
+        margin: 10px;
+        padding: 10px;
+        text-transform: uppercase;
+        border-style: none;
+        text-decoration: none;
+
+        &:hover{
+            background-color: map-get($styles, color1);
+            color: map-get($styles, color3);
+            transition: all 0.3s;
+            transform: scale(1.05);
+        }
+    }  
 }
-.waterAct:hover{
-    transition: all 1.5s;
-    transform: scale(1.02);
-    border-radius: 4px;
-}
-.waterAct__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.waterAct__button{
-    background-color: white;
-    color: #233754;
-    border-radius: 4px;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-    text-decoration: none;
-}
-.waterAct__button:hover{
-    background-color: #233754;
-    color: white;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
+
 .bodyCare{
-    background-color: white;
+    background-color: map-get($styles, color3);
     padding: 100px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    @include generateflex(column, center, center);
+    
+    &__info{
+        padding: 50px;
+    }
 }
 .body__title{
     font-size: 25px;
@@ -152,13 +154,11 @@
     padding: 20px;
     max-width: 650px;
 }
-.bodyCare__info{
-    padding: 50px;
-}
+
 .body__button{
-    background-color:#233754;
+    background-color:map-get($styles, color1);
     border-radius: 4px;
-    color: white;
+    color: map-get($styles, color3);
     width: 280px;
     margin: 10px;
     padding: 10px;
@@ -167,50 +167,51 @@
     text-decoration: none;
 }
 .body__button:hover{
-    background-color: #bca762;
+    background-color: map-get($styles, color2);
     transition: all 0.3s;
     transform: scale(1.05);
 }
+
 .bodySpa{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 30px;
+    @include generateflex(row,space-evenly, center);
+    padding: 25px;
+    margin-bottom: 60px;
+
+    &__img{
+        max-width: 600px;
+        border: solid white 6px;
+    }
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        margin: 10px;
+        font-weight: 700;
+    }
+    &__info{
+        margin: 10px;
+        max-width: 500px;
+        @include generateflex(column, center, center);
+        gap: 20px;
+    }
 }
-.bodySpa__img{
-    max-width: 600px;
-}
-.bodySpa__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.bodySpa__info{
-    margin: 10px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
+
 .bodyFitness{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    text-align: center;
+    @include generateflex(row-reverse, space-evenly, center);
     padding: 30px;
-}
-.bodyFitness__info{
-    margin: 10px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+
+    &__info{
+        margin: 10px;
+        max-width: 500px;
+        @include generateflex(column, center, center);
+        gap: 20px;
+    }
+
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        margin: 10px;
+        font-weight: 700;
+    }
 }
 .bodyFitness__title{
     font-size: 25px;
@@ -220,107 +221,104 @@
 }
 .gather{
     padding: 100px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    @include generateflex(column, center, center);
+
+    &__img{
+        max-width: 600px;
+        border: solid white 6px;
+    }
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__text{
+        font-size: 16px;
+        padding: 20px;
+        max-width: 650px;
+    }
 }
+
 .gatherInfo{
-    padding: 50px;
+    padding: 60px 0px 100px;
 }
-.gather__img{
-    max-width: 600px;
-}
-.gather__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.gather__text{
-    font-size: 16px;
-    padding: 20px;
-    max-width: 650px;
-}
+
+
 .gatherWedding{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
+    @include generateflex(row, space-evenly, center);
     padding: 30px;
-}
-.gatherWedding__info{
-    margin: 10px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.gatherWedding__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: 700;
-}
-.gatherWedding__button{
-    background-color:#bca762;
-    border-radius: 4px;
-    color: white;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-}
-.gatherWedding__button:hover{
-    background-color:  #233754;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.gatherWedding__button a{
-    text-decoration: none;
-    color: white;
+    margin-bottom: 60px;
+
+    &__info{
+        margin: 10px;
+        max-width: 500px;
+        @include generateflex(column, center, center);
+        gap: 20px;
+    }
+
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        margin: 10px;
+        font-weight: 700;
+    }
+
+    &__button{
+        background-color:map-get($styles, color2);
+        border-radius: 4px;
+        color: map-get($styles, color3);
+        width: 280px;
+        margin: 10px;
+        padding: 10px;
+        text-transform: uppercase;
+        border-style: none;
+
+        &:hover{
+            background-color:  map-get($styles, color1);
+            transition: all 0.3s;
+            transform: scale(1.05);
+        }
+        & a{
+            text-decoration: none;
+            color: map-get($styles, color3);
+        }
+    }
 }
 .gatherEvent{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    text-align: center;
+    @include generateflex(row-reverse, space-evenly, center);
     padding: 30px;
-}
-.gatherEvent__info{
-    margin: 10px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.gatherEvent__title{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.gatherEvent__button{
-    background-color:#bca762;
-    border-radius: 4px;
-    color: white;
-    width: 280px;
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-style: none;
-}
-.gatherEvent__button:hover{
-    background-color:  #233754;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-.gatherEvent__button a{
-    text-decoration: none;
-    color: white;
+
+    &__info{
+        margin: 10px;
+        max-width: 500px;
+        @include generateflex(column, center, center);
+        gap: 20px;
+    }
+    &__title{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__button{
+        background-color:map-get($styles, color2);
+        border-radius: 4px;
+        color: map-get($styles, color3);
+        width: 280px;
+        margin: 10px;
+        padding: 10px;
+        text-transform: uppercase;
+        border-style: none;
+
+        &:hover{
+            background-color: map-get($styles, color1);
+            transition: all 0.3s;
+            transform: scale(1.05);
+        }
+        & a{
+            text-decoration: none;
+            color: map-get($styles, color3);
+        }
+    } 
 }

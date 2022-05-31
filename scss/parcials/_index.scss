@@ -4,8 +4,8 @@
 }
 
 .reservation{
-    background-color:darkgray;
-    color: white;
+    background-color:map-get($styles, color4);
+    color: map-get($styles, color3);
     padding: 70px 0px 50px;
     width: 100%;
 
@@ -21,8 +21,7 @@
 
 .reservationForm{
     max-width: 100%;
-    display: flex;
-    justify-content: center;
+    @include generateflex(row, center, center);
 
     &__div{
         margin: 10px;
@@ -31,13 +30,13 @@
 }
 
 .label{
-    color: white;
+    color: map-get($styles, color3);
     width: 100%;
     text-transform: uppercase;
 }
 
 .reservation__button{
-    background-color: #bca762;
+    background-color: map-get($styles, color2);
     width: 280px;
     padding: 10px;
     text-transform: uppercase;
@@ -47,7 +46,7 @@
     margin-top: 55px;
 
     & a{
-        color: white;
+        color: map-get($styles, color3);
         text-decoration: none;   
     }
     &:hover{
@@ -58,12 +57,12 @@
 }
 
 .link{
-    color: white;
+    color: map-get($styles, color3);
     font-weight: 700;
 }
 
 .welcome{
-    background-color: white;
+    background-color: map-get($styles, color3);
     padding-top: 140px;
     padding-bottom: 160px;
     display: flex;
@@ -92,29 +91,25 @@
 
 
 .introduction{
-    padding: 100px ;
-    display: flex;
-    flex-direction: column;
+    padding: 100px;
+    @include generateflex(column, center, center);
 }
 
 .stay{
     padding: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    margin-bottom: 60px;
+    @include generateflex(row, space-evenly, center);
 
     &__img{
         max-width: 600px;
+        border: solid white 6px;
     }
 }
 
 .stay2{
     margin: 10px;
     max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include generateflex(column, space-evenly, center);
     gap: 20px;
 
     &__title{
@@ -130,7 +125,7 @@
 
     &__button{
         background-color: $color-primary;
-        color: white;
+        color: map-get($styles, color3);
         text-align: center;
         width: 280px;
         padding: 10px;
@@ -140,8 +135,8 @@
         border-radius: 4px;
 
         &:hover{
-            background-color: #bca762;
-            color: white;
+            background-color: map-get($styles, color2);
+            color: map-get($styles, color3);
             transition: all 0.3s;
             transform: scale(1.05);
         }
@@ -151,12 +146,11 @@
 
 .explore{
     padding: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include generateflex(row, space-evenly, center);
 
     &_img{
         max-width: 600px;
+        border: solid white 6px;
     }
 }
 
@@ -164,9 +158,7 @@
     margin: 10px;
     max-width: 500px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include generateflex(column, space-evenly, center);
     gap: 20px;
 
     &__title{
@@ -181,8 +173,8 @@
     }
 
     &__button{
-        background-color: $color-primary;
-        color: white;
+        background-color: map-get($styles, color1);
+        color: map-get($styles, color3);
         width: 280px;
         padding: 10px;
         margin-top: 35px;
@@ -192,8 +184,8 @@
         text-align: center;
 
         &:hover{
-            background-color: #bca762;
-            color: white;
+            background-color: map-get($styles, color2);
+            color: map-get($styles, color3);
             transition: all 0.1s;
             transform: scale(1.05);
         }
@@ -202,9 +194,8 @@
 
 .services{
     height: 500px;
-    display: flex;
+    @include generateflex(row, center, center);
     flex-wrap: wrap;
-    flex-direction: row;
 }
 
 .servicesFood{
@@ -214,14 +205,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
+    color: map-get($styles, color3);
     text-align: center;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
+    @include generateflex(column, space-evenly, center);
+    
     &:hover{
         transition: all 1.5s;
         transform: scale(1.02);
@@ -236,8 +224,8 @@
     }
 
     &__button{
-        background-color: white;
-        color: $color-primary;
+        background-color: map-get($styles, color3);
+        color: map-get($styles, color1);
         width: 280px;
         margin: 10px;
         padding: 10px;
@@ -246,8 +234,8 @@
         border-radius: 4px;
 
         &:hover{
-            background-color: $color-primary;
-            color: white;
+            background-color: map-get($styles, color1);
+            color: map-get($styles, color3);
             transition: all 0.3s;
             transform: scale(1.05);
         }
@@ -262,7 +250,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
+    color: map-get($styles, color3);
     text-align: center;
     padding: 20px;
     display: flex;
@@ -283,7 +271,7 @@
         font-weight: 700;
     }
     &__button{
-        background-color: white;
+        background-color: map-get($styles, color3);
         color: $color-primary;
         width: 280px;
         margin: 10px;
@@ -294,7 +282,7 @@
 
         &:hover{
             background-color: $color-primary;
-            color: white;
+            color: map-get($styles, color3);
             transition: all 0.3s;
             transform: scale(1.05);
         }
@@ -309,7 +297,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
+    color: map-get($styles, color3);
     text-align: center;
     padding: 20px;
     display: flex;
@@ -329,8 +317,8 @@
         font-weight: 700;
     }
     &__button{
-        background-color: white;
-        color: $color-primary;
+        background-color: map-get($styles, color3);
+        color: map-get($styles, color1);
         width: 280px;
         margin: 10px;
         padding: 10px;
@@ -340,7 +328,7 @@
 
         &:hover{
             background-color: $color-primary;
-            color: white;
+            color: map-get($styles, color3);
             transition: all 0.3s;
             transform: scale(1.05);
         }
@@ -348,7 +336,7 @@
 }
 
 .reviews{
-    background-color: white;
+    background-color: map-get($styles, color3);
     padding-top: 140px;
     padding-bottom: 150px;
     display: flex;
@@ -377,7 +365,7 @@
         margin: 20px;
         font-weight: 700;
         text-decoration: none;
-        color: grey;
+        color: map-get($styles, color4);
 
         &:hover{
             transition: all 0.3s;
@@ -403,6 +391,10 @@
             color: $color-primary;
         }
     }
+}
+
+.carousel-inner{
+    border: solid white 6px;
 }
 
 .map iframe{

@@ -1,9 +1,6 @@
 @media screen and (max-width: 1023px) {
-    .conradDeco {
-        margin-left: 39%;
-    }
-    .hiltonDeco {
-        margin-left: 44%;
+    .nav__ul {
+        display: none;
     }
     /* ---------------------------------------- Index */
     .header_image {
@@ -42,6 +39,10 @@
     .otherExperiencies__button{
         margin-top: 5px;
     }
+    /*----------------------------------------- Resort*/
+    .col-md-6 {
+        width: 75%;
+    }
 }
 @media screen and (max-width: 600px) {
     .hiltonAd__logo {
@@ -60,17 +61,19 @@
     .header_image{
         min-height: 157px;
     }
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.0);
+        border-color: rgba(0,0,0,0);
+    }
     .footerDiv{
         flex-direction: column;
         text-align: center;
     }
     .conradDeco{
         width: 170px;
-        margin-left: 23%;
     }
     .hiltonDeco{
         width: 95px;
-        margin-left: 35%
     }
     .informative{
         padding: 100px 16px;
@@ -163,6 +166,12 @@
     .social__box {
         padding: 0px 16px 100px;
     }
+    .col-md-6 {
+         width: 100%; 
+    }
+    .w-75 {
+        width: 100%!important;
+    }
     /* ---------------------------------------- Stay */
     .views{
         padding: 100px 16px;
@@ -184,6 +193,12 @@
     }
     .containerText{
         font-size: 25px;
+    }
+    .pb-5 {
+        padding-bottom: 2rem!important;
+    }
+    .rooms {
+        padding: 0px 0px;
     }
     /* ---------------------------------------- Dine */
     .resto{

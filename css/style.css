@@ -16,8 +16,8 @@
 }
 
 .button--white {
-  background-color: white;
-  color: #233754;
+  background-color: #233754;
+  color: white;
 }
 
 .box-medium {
@@ -230,13 +230,11 @@ p {
   margin-top: 15px;
   content: center;
   margin-top: 20px;
-  margin-left: 44%;
 }
 
 .hiltonDeco {
   width: 100px;
   margin-top: 15px;
-  margin-left: 47%;
 }
 
 .footer__title {
@@ -244,6 +242,16 @@ p {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  text-align: left;
 }
 
 .footer__title-1 {
@@ -284,13 +292,48 @@ p {
   padding: 25px 0px 35px;
 }
 
+.shadow-drop-2-tb {
+  -webkit-animation: shadow-drop-2-tb 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-2-tb 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes shadow-drop-2-tb {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35), 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35), 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes shadow-drop-2-tb {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35), 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35), 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+
 .header__video {
   max-width: 100%;
   margin-top: 140px;
 }
 
 .reservation {
-  background-color: darkgray;
+  background-color: darkgrey;
   color: white;
   padding: 70px 0px 50px;
   width: 100%;
@@ -308,7 +351,10 @@ p {
 .reservationForm {
   max-width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .reservationForm__div {
@@ -381,17 +427,24 @@ p {
   padding: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .stay {
   padding: 25px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
 
 .stay__img {
   max-width: 600px;
+  border: solid white 6px;
 }
 
 .stay2 {
@@ -399,8 +452,9 @@ p {
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  text-align: center;
   gap: 20px;
 }
 
@@ -439,19 +493,24 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
 
 .explore_img {
   max-width: 600px;
+  border: solid white 6px;
 }
 
 .explore2 {
   margin: 10px;
   max-width: 500px;
   display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  text-align: center;
   gap: 20px;
 }
 
@@ -488,8 +547,11 @@ p {
 .services {
   height: 500px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .servicesFood {
@@ -506,6 +568,7 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 
 .servicesFood:hover {
@@ -667,7 +730,7 @@ p {
   margin: 20px;
   font-weight: 700;
   text-decoration: none;
-  color: grey;
+  color: darkgrey;
 }
 
 .reviews a:hover {
@@ -696,20 +759,27 @@ p {
   color: #233754;
 }
 
+.carousel-inner {
+  border: solid white 6px;
+}
+
 .map iframe {
   width: 100%;
 }
 
 .views {
   background-color: white;
-  padding: 30px;
   padding: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .views__image {
   max-width: 600px;
+  border: solid white 6px;
 }
 
 .views__title {
@@ -724,14 +794,7 @@ p {
   justify-content: space-evenly;
   text-align: center;
   padding: 30px;
-}
-
-.views__2 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  text-align: center;
-  padding: 30px;
+  margin-bottom: 60px;
 }
 
 .views__1text {
@@ -741,7 +804,17 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 20px;
+}
+
+.views__2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
 }
 
 .views__2text {
@@ -751,6 +824,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 20px;
 }
 
@@ -760,15 +834,6 @@ p {
 
 .rooms article {
   margin: 20px;
-}
-
-.roomTitle {
-  padding: 10px;
-  font-size: 25px;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 30px;
 }
 
 .rooms_title {
@@ -803,6 +868,15 @@ p {
 .rooms_button a {
   text-decoration: none;
   color: white;
+}
+
+.roomTitle {
+  padding: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .amenities__title {
@@ -1059,12 +1133,12 @@ p {
   background-size: cover;
   color: white;
   padding: 15px;
-  text-align: center;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 
 .heritage:hover {
@@ -1108,12 +1182,12 @@ p {
   background-size: cover;
   color: white;
   padding: 15px;
-  text-align: center;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 
 .motoNui:hover {
@@ -1157,12 +1231,12 @@ p {
   background-size: cover;
   color: white;
   padding: 15px;
-  text-align: center;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 
 .waterAct:hover {
@@ -1202,8 +1276,13 @@ p {
   padding: 100px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.bodyCare__info {
+  padding: 50px;
 }
 
 .body__title {
@@ -1217,10 +1296,6 @@ p {
   font-size: 16px;
   padding: 20px;
   max-width: 650px;
-}
-
-.bodyCare__info {
-  padding: 50px;
 }
 
 .body__button {
@@ -1245,12 +1320,15 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   text-align: center;
-  padding: 30px;
+  padding: 25px;
+  margin-bottom: 60px;
 }
 
 .bodySpa__img {
   max-width: 600px;
+  border: solid white 6px;
 }
 
 .bodySpa__title {
@@ -1267,6 +1345,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 20px;
 }
 
@@ -1274,6 +1353,7 @@ p {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
+  align-items: center;
   text-align: center;
   padding: 30px;
 }
@@ -1285,7 +1365,15 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 20px;
+}
+
+.bodyFitness__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: 700;
 }
 
 .bodyFitness__title {
@@ -1299,16 +1387,14 @@ p {
   padding: 100px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
   align-items: center;
-}
-
-.gatherInfo {
-  padding: 50px;
+  text-align: center;
 }
 
 .gather__img {
   max-width: 600px;
+  border: solid white 6px;
 }
 
 .gather__title {
@@ -1324,12 +1410,18 @@ p {
   max-width: 650px;
 }
 
+.gatherInfo {
+  padding: 60px 0px 100px;
+}
+
 .gatherWedding {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   text-align: center;
   padding: 30px;
+  margin-bottom: 60px;
 }
 
 .gatherWedding__info {
@@ -1339,6 +1431,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 20px;
 }
 
@@ -1375,6 +1468,7 @@ p {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
+  align-items: center;
   text-align: center;
   padding: 30px;
 }
@@ -1386,6 +1480,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 20px;
 }
 
@@ -1420,12 +1515,12 @@ p {
 
 .host {
   background-color: white;
-  padding: 15px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 100px;
-  align-items: center;
 }
 
 .host__title {
@@ -1479,6 +1574,7 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 
 .clean__service1:hover {
@@ -1511,6 +1607,7 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 
 .clean__service2:hover {
@@ -1544,6 +1641,7 @@ p {
   list-style: none;
   color: black;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   text-align: center;
@@ -1578,8 +1676,9 @@ p {
   padding: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .contact_title {
@@ -1587,6 +1686,12 @@ p {
   text-transform: uppercase;
   font-weight: 700;
   margin: 20px 0px 30px;
+}
+
+.contact_text {
+  font-size: 16px;
+  padding: 0px 0px 20px;
+  max-width: 650px;
 }
 
 .contact label {
@@ -1619,7 +1724,9 @@ p {
 .formContact {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 
 .reservationForm__div {
@@ -1635,11 +1742,8 @@ p {
 }
 
 @media screen and (max-width: 1023px) {
-  .conradDeco {
-    margin-left: 39%;
-  }
-  .hiltonDeco {
-    margin-left: 44%;
+  .nav__ul {
+    display: none;
   }
   /* ---------------------------------------- Index */
   .header_image {
@@ -1678,6 +1782,10 @@ p {
   .otherExperiencies__button {
     margin-top: 5px;
   }
+  /*----------------------------------------- Resort*/
+  .col-md-6 {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1697,17 +1805,19 @@ p {
   .header_image {
     min-height: 157px;
   }
+  .navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+  }
   .footerDiv {
     flex-direction: column;
     text-align: center;
   }
   .conradDeco {
     width: 170px;
-    margin-left: 23%;
   }
   .hiltonDeco {
     width: 95px;
-    margin-left: 35%;
   }
   .informative {
     padding: 100px 16px;
@@ -1800,6 +1910,12 @@ p {
   .social__box {
     padding: 0px 16px 100px;
   }
+  .col-md-6 {
+    width: 100%;
+  }
+  .w-75 {
+    width: 100% !important;
+  }
   /* ---------------------------------------- Stay */
   .views {
     padding: 100px 16px;
@@ -1821,6 +1937,12 @@ p {
   }
   .containerText {
     font-size: 25px;
+  }
+  .pb-5 {
+    padding-bottom: 2rem !important;
+  }
+  .rooms {
+    padding: 0px 0px;
   }
   /* ---------------------------------------- Dine */
   .resto {

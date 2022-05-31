@@ -16,8 +16,8 @@ $styles: (
 );
 
 .button{
-    background-color: #233754;
-    color: white;
+    background-color: map-get($styles, color1);
+    color: map-get($styles, color3);
     width: 280px;
     text-align: center;
     padding: 10px;
@@ -29,13 +29,13 @@ $styles: (
 
     &--gold{
         @extend .button;
-        background-color: #bca762,
+        background-color: map-get($styles, color2),
     }
 
     &--white{
         @extend .button;
-        background-color: white;
-        color: #233754;
+        background-color: map-get($styles, color1);
+        color: map-get($styles, color3);
     }
 }
 

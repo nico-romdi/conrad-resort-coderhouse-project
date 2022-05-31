@@ -1,11 +1,7 @@
 .host{
-    background-color: white;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    background-color: map-get($styles, color3);
+    @include generateflex(column,center, center);
     padding: 100px;
-    align-items: center;
 
     &__title{
         font-size: 30px;
@@ -24,8 +20,8 @@
     display: flex;
 
     &_button{
-        background-color: white;
-        color: #233754;
+        background-color: map-get($styles, color3);
+        color: map-get($styles, color1);
         width: 280px;
         margin: 10px;
         padding: 10px;
@@ -35,8 +31,8 @@
         text-decoration: none;
 
         &:hover{
-            background-color: #233754;
-            color: white;
+            background-color: map-get($styles, color1);
+            color: map-get($styles, color3);
             transition: all 0.5s;
             transform: scale(1.05);
         }
@@ -50,14 +46,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
+    color: map-get($styles, color3);
     padding: 15px;
     text-align: center;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @include generateflex(column, space-evenly, center);
 
     &:hover{
         transition: all 1.5s;
@@ -80,13 +73,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
+    color: map-get($styles, color3);
     text-align: center;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @include generateflex(column, space-evenly, center);
 
     &:hover{
         transition: all 1.5s;
@@ -105,7 +95,7 @@
     }
 }
 .amenities{
-    background-color: white;
+    background-color: map-get($styles, color3);
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -117,10 +107,7 @@
         padding: 30px;
         list-style: none;
         color: black;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: center;
+        @include generateflex(row, center, flex-start);
         flex-wrap: wrap;  
         gap: 10px; 
         
@@ -130,8 +117,8 @@
         }   
     } 
     &__button{
-        background-color:#bca762;
-        color: white;
+        background-color:map-get($styles, color2);
+        color: map-get($styles, color3);
         width: 280px;
         margin-top: 20px;
         padding: 10px;
@@ -140,21 +127,16 @@
         border-radius: 4px;
 
         &__button:hover{
-            background-color:#233754;
+            background-color:map-get($styles, color1);
             transition: all 0.5s;
             transform: scale(1.05);
         }
     } 
 }
-
-
 .contact{
     background-color: antiquewhite;
     padding: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include generateflex(column, center, center);
 
     &_title{
         font-size: 25px;
@@ -163,12 +145,18 @@
         margin: 20px 0px 30px;
     }
 
+    &_text{
+        font-size: 16px;
+        padding: 0px 0px 20px;
+        max-width: 650px;
+    }
+
     & label{
         text-transform: uppercase;
     }
     &__button{
-        background-color:#233754;
-        color: white;
+        background-color:map-get($styles, color1);
+        color: map-get($styles, color3);
         width: 280px;
         margin-top: 20px;
         padding: 10px;
@@ -177,8 +165,8 @@
         border-radius: 4px;
     
         &:hover{
-            background-color:#bca762;
-            color: white;
+            background-color:map-get($styles, color2);
+            color: map-get($styles, color3);
             transition: all 0.5s;
             transform: scale(1.05);
         }
@@ -190,16 +178,15 @@
     width: 30px;
 }
 .formContact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include generateflex(column, space-evenly, center);
 }
 .reservationForm__div{
     min-width: 100%;
 }
 .modalLink{
     color: grey;
+    
     &:hover{
-        color: #bca762;
+        color: map-get($styles, color2);
     }
 }
