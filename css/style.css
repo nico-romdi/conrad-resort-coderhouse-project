@@ -1079,6 +1079,7 @@ p {
 
 .otherExperiencies__img {
   max-width: 500px;
+  border: solid 6px white;
 }
 
 .otherExperiencies__title {
