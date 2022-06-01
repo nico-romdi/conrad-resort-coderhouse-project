@@ -2016,6 +2016,12 @@ p {
     flex-direction: column;
     padding: 40px 0px;
   }
+  .bodySpa__img {
+    max-width: 100%;
+  }
+  .gather__img {
+    max-width: 100%;
+  }
   /* ---------------------------------------- Resort */
   .host {
     padding: 100px 16px;
